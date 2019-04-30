@@ -34,7 +34,6 @@ img{
 	border-bottom: solid;
 	color: #F8E43E;
 	vertical-align: bottom;
-
 }
 
 /* paddeing なんか聞かない*/
@@ -65,12 +64,16 @@ img{
 	display: inline-block;
 	font-size: 1.2rem;
 	font-weight: bold;
-	border-right: 1px #444444;
 	vertical-align: top;
+	padding: 0px 30px 0 30px;
 }
 
+.nav-outer li+ li {
+	border-left: 1px solid #444444;
+  }
 
-.header-btn{
+
+button.header-btn{
 	display: inline-block;
 	width: 200px;
 	height:40px;
@@ -79,6 +82,7 @@ img{
 	border-color: #444444;
 	background-color: #FFFFFF;
 	vertical-align:bottom;
+    border-radius: 25px;
 }
 
 .wrapper {
@@ -175,17 +179,6 @@ text-align: center;
 	margin-bottom: 50px;
 }
 
-#wrap {
-    position: relative;
-}
-#svg-bg {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
 
 /* ---------------cando-things--------------- */
 
@@ -224,7 +217,6 @@ text-align: center;
 
 /* ---------------footer--------------- */
 
-
 .footer{
 	text-align: center;
 	background-color: #868686;
@@ -234,10 +226,31 @@ text-align: center;
 	color: #FFFFFF;
 }
 
+.wrap{
+	position: relative;
+	height: 30px;
+	width: 100%;
+	background-color: #ffffff;
+	z-index: 0;
+}
+
+#svg-bg{
+	position: absolute;
+	pointer-events: absolute;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	top:0px;
+	left:0;
+	z-index: 1;
+	height: 40px;
+}
+
+
 .h2{
 	font-size: 7.5rem;
 	margin-bottom:72px;
-	padding-top: 30px;
+	padding-top: 100px;
 }
 
 .footer-sentence{
@@ -249,6 +262,7 @@ text-align: center;
 .li-item {
 	display: inline-block;
 	font-size: 2.0rem;
+	padding: 0px 30px 0 30px;
 }
 
 .li-item a{
@@ -262,5 +276,9 @@ text-align: center;
 .copyrights{
 	font-size: 1.5rem;
 }
+
+.footer li+ li {
+	border-left: 1px solid #FFFFFF;
+  }
 
 /* ---------------footer--------------- */
