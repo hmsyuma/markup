@@ -179,23 +179,44 @@ text-align: center;
 	margin-bottom: 50px;
 }
 
+.about .wrap{
+	position: relative;
+	height: 30px;
+	width: 100%;
+	background-color: #ffffff;
+	z-index: 0;
+}
+
+#about-bg{
+	position: absolute;
+	pointer-events: absolute;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	top:-40px;
+	left:0;
+	z-index: 1;
+}
 
 /* ---------------cando-things--------------- */
 
 .cando-things{
 	background-color: white;
 	text-align: center;
+	
 }
 
 .cando-titele{
 	font-size: 3.2rem;
 	font-weight: bold;
 	margin-bottom: 83px;
- }
+  padding-top: 100px;
+}
 
 .cando-profile img {
 	width: 397px;
 	height: 814px;
+	margin-bottom: 348px;
 
 }
 
@@ -205,11 +226,36 @@ text-align: center;
 /* ---------------case study--------------- */
 
 .case-study{
-background-color:#F2F2F2;
 text-align: center;
+background-color: #F2F2F2;
 }
 
+.case-titele{
+	padding-top:112px; 
+	font-size: 3.2rem;
+	font-weight: bold;
+	margin-bottom: 100px;
 
+}
+
+ .case-study .wrap{
+	position: relative;
+	height: 30px;
+	width: 100%;
+	background-color: #ffffff;
+	z-index: 0;
+}
+
+#case-bg{
+	position: absolute;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	top:-110px;
+	left:0;
+	z-index: 1;
+
+}
 
 
 /* ---------------case study--------------- */
@@ -226,7 +272,7 @@ text-align: center;
 	color: #FFFFFF;
 }
 
-.wrap{
+.footer .wrap{
 	position: relative;
 	height: 30px;
 	width: 100%;
@@ -244,6 +290,10 @@ text-align: center;
 	left:0;
 	z-index: 1;
 	height: 40px;
+}
+
+.path{
+	width: 2000px;
 }
 
 
