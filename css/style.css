@@ -151,7 +151,7 @@ text-align: center;
 	display: inline-block;
 	height: 63px;
 	width: 262px;
-	margin-top: 160px;
+	margin: 160px 0 0 25px;
 }
 
 .title-sentence{
@@ -160,6 +160,9 @@ text-align: center;
 	font-weight: bold;
 	margin: 150px 0 0 25px;
 }
+
+
+
 .title-img{
 	position: absolute;
 	height: 209px;
@@ -203,22 +206,141 @@ text-align: center;
 .cando-things{
 	background-color: white;
 	text-align: center;
-	
 }
 
 .cando-titele{
 	font-size: 3.2rem;
 	font-weight: bold;
-	margin-bottom: 83px;
-  padding-top: 100px;
+	margin-bottom: 306px;
+  padding-top: 150px;
+}
+
+.cando-wrap{
+	position: relative;
 }
 
 .cando-profile img {
 	width: 397px;
 	height: 814px;
-	margin-bottom: 348px;
-
+	margin-bottom: 348px;	
 }
+
+
+/* cando-things-topsentence */
+.section-top-sentence{
+	position: absolute;
+	line-height: 200%;
+	text-align: center;
+	font-size: 2rem;
+	color: #444444;
+	top:-20%;
+	left:62%;
+	z-index: 2;
+}
+
+.cando-top-svg{
+	position: absolute;	
+	top:-20%;
+	left:54%;
+	z-index: 1;
+}
+
+.top-subtitele{
+	position: absolute;
+	font-size: 3.2rem;
+	font-weight: bold;
+  top:-10%;
+	left:62%;
+	z-index: 2;
+}
+
+.top-paragraph{
+	position: absolute;
+	font-size: 2.0rem;
+	top:-6%;
+	left:62%;
+	z-index: 2;
+	line-height: 200%
+}
+/* cando-things-topsentence */
+
+
+/* cando-things-left-sentence */
+.section-left-sentence{
+	position: absolute;
+	line-height: 200%;
+	text-align: center;
+	font-size: 2rem;
+	color: #444444;
+	top:20%;
+	left:20%;
+	z-index: 2;
+}
+
+.cando-left{
+	position: absolute;
+	top:10%;
+	left:9%;
+	z-index: 1;
+}
+
+.left-subtitele{
+	position: absolute;
+	font-size: 3.2rem;
+	font-weight: bold;
+	top:20%;
+	left:20%;
+	z-index: 2;
+}
+
+.left-paragraph{
+	position: absolute;
+	font-size: 2.0rem;
+	top:24%;
+	left:20%;
+	z-index: 2;
+	line-height: 200%
+}
+/* cando-things-left-sentence */
+
+
+/* cando-things-buttom-sentence */
+.section-buttom-sentence{
+	position: absolute;
+	line-height: 200%;
+	text-align: center;
+	font-size: 2rem;
+	color: #444444;
+	top:53%;
+	left:61%;
+	z-index: 2;
+}
+
+.cando-buttom{
+	position: absolute;
+	top:43%;
+	left:51%;
+	z-index: 1;
+}
+
+.buttom-subtitele{
+	position: absolute;
+	font-size: 3.2rem;
+	font-weight: bold;
+	top:52%;
+	left:55%;
+	z-index: 2;
+}
+
+.buttom-paragraph{
+	position: absolute;
+	font-size: 2.0rem;
+	top:56%;
+	left:55%;
+	z-index: 2;
+	line-height: 200%
+}
+/* cando-things-buttom-sentence */
 
 /* ---------------cando-things--------------- */
 
