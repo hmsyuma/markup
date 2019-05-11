@@ -1,0 +1,89 @@
+/* ---------------case study--------------- */
+.case-study{
+    text-align: center;
+    background-image: url("../images/new.img/case-bg.png");
+    width:100%;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+
+.case-title{
+	padding-top: 212px; 
+	font-size: 3.2rem;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+
+.wrap {
+    display: flex;
+    justify-content: stretch;
+  }
+
+  .slider{
+    margin:187px ;
+
+  }
+
+  .sl-img{
+   margin: 0 auto;
+  }
+
+  .slide-item .flex {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+  }
+
+  .slider .flex .figure .img{
+      margin-left: 70px 400px 400px 163px ;  
+  }
+
+  .slider .flex .textarea{
+      margin: 0 auto;
+  }
+
+  .slider .textarea h2{
+    font-size: 4.0rem;
+    text-align: left;
+    line-height: 150%;
+    margin-bottom: 40px; 
+  }
+
+  .slider .textarea p{
+    font-size: 2.0rem;
+  }
+
+  .slide-name {
+    font-size: 1.8rem;
+    text-align: right;
+    margin-bottom: 40px;
+  }
+
+  .slide-arrow {
+    display: flex;
+    width: 32px;
+    height: 82px;
+    margin-bottom: 47px;
+    margin-top: 150px
+  }
+
+.slide-text{
+    text-align: left;
+    line-height: 200%;
+}
+
+.slide-prearrow{
+    position: absolute;
+    top:200px;
+    right:-100px;
+}
+
+.slide-nextarrow{
+    position: absolute;
+    top:200px;
+    left:-100px;
+}
+
+
+/* ---------------case study--------------- */
