@@ -1,11 +1,10 @@
 /* ---------------main visual--------------- */
-
 .main-visual{
   height: 100%;
   width: 100%;
   position: relative;
   justify-content: center; 
-  align-items:  center; 
+  align-items: center; 
 }
 
 .main-visual .main-bg{
@@ -17,8 +16,7 @@
   background-size: contain;
 }
 
-/* DTでサイズ変更を行うと下に下る */
-.main-visual .site-title{
+.main-visual .site-logo{
   position: absolute;
   height: 23%;
   width: 36%;
@@ -26,31 +24,34 @@
   left: 32%;
 }
 
-
 /* .main-visual .site-title img{
-  /* height: 100%;
-  width:  100%; */
-/* }  */ 
+ height: 100%;
+  width:  100%;
+ }  */ 
 
-.main-visual .site-title__sub{
+ .main-visual .site-logo-sub{
   position: absolute;
-  top: 56%;
-  left: 33%;
+  top: 55%;
+  left: 34%;
   height: 10%;
   width: 36%;
-  font-size: 4.2rem;
+  font-size: 2.1vw;
   font-weight: bold;
   color: #FFF;
-
 }
 
 .main-visual .scroll-btn{
-  position:  absolute;
-  top:  0;
-  left:  0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
+.main-visual .scroll-btn {
+  width: 6.8%;
+  margin-top: 34%;
+  margin-left: 47%;
+} 
 
-.main-visual .scroll-btn img{
-  height: 10%;
-  width:  20%;
-}
+/* .main-visual .scroll-btn img{
+  height: 100%;
+  width: 100%; 
+}   */

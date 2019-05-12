@@ -11,9 +11,25 @@ body{
 	-ms-text-size-adjust: 100%;
 	-webkit-font-smoothing: antialiased;
 	font-feature-settings : "palt";
-	-moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* .body-wrap{
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* .body-wrap {
   overflow: hidden;
+} */
+
+/* p {
+  font-size: 5vw;
+}
+ 
+@media(min-width:700px) {
+  p {
+    font-size:  35px;
+  }
 } */
