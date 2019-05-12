@@ -1,49 +1,56 @@
 /* ---------------main visual--------------- */
 
 .main-visual{
-  height:  735px;
-  width:  1900px;
-  position:  relative;
-  display:  flex;
-  justify-content:  center;
-  align-items:  center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  justify-content: center; 
+  align-items:  center; 
 }
 
 .main-visual .main-bg{
-  width:  1900px;
-  background-image:  url("../images/new.img/bg-top.png");
-  height:  735px;
-  background-repeat:  no-repeat;
-  /* background-size:  cover; */
+  height: 0;
+  width: 100%;
+  background-image: url("../images/new.img/main-bg.png");
+  padding-top: 38%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* DTでサイズ変更を行うと下に下る */
+.main-visual .site-title{
+  position: absolute;
+  height: 23%;
+  width: 36%;
+  top: 26%;
+  left: 32%;
 }
 
 
-.site-title{
-  position:  absolute;
-  top:  50%;
-  left:  50%;
-  transform:  translate(-50%, -50%); 
-  width:  100%;
-  font-size:  4.8rem;
-  line-height:  1;
-  text-align:  center;
+/* .main-visual .site-title img{
+  /* height: 100%;
+  width:  100%; */
+/* }  */ 
+
+.main-visual .site-title__sub{
+  position: absolute;
+  top: 56%;
+  left: 33%;
+  height: 10%;
+  width: 36%;
+  font-size: 4.2rem;
+  font-weight: bold;
+  color: #FFF;
+
 }
 
-.site-title__sub{
-  display:  block;
-  margin:  40px 0 0;
-  font-size:  4.2rem;
-  font-weight:  bold;
-  color:  #FFF;
-}
-
-.scroll-btn{
+.main-visual .scroll-btn{
   position:  absolute;
   top:  0;
   left:  0;
-  top:  113%;
-  left:  50%;
-  transform:  translate(-50%, -120%);
-  /* なぜtransformで解決したのか、、、、topとleftあります。 */
 }
 
+.main-visual .scroll-btn img{
+  height: 10%;
+  width:  20%;
+}

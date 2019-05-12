@@ -13,3 +13,7 @@ body{
 	font-feature-settings : "palt";
 	-moz-osx-font-smoothing: grayscale;
 }
+
+/* .body-wrap{
+  overflow: hidden;
+} */
