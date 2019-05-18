@@ -1,0 +1,144 @@
+
+/* ---------------cando-things--------------- */
+.cando-things{
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+} 
+
+.about-bg{
+  height: 85px;
+  background-image: url("../images/newimgs/about-bg.png");
+  background-repeat: repeat-x;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5.5%; 
+ }
+
+.cando-title{
+  font-size: 1.6vw;
+  font-weight: bold;
+  margin-bottom: 16%;
+}
+ 
+.cando-things .cando-wrap .cando-profile img{
+  position: absolute;
+  top:0px;
+  left:774px;
+  margin-bottom: 18%; 
+}
+
+.cando-wrap{
+  align-items: center;
+  height: 1200px;
+  width: 100%;
+  position: relative;
+} 
+
+/*-------------- 右上のコンテンツみんなの興味がわく --------------*/
+.a-wrap {
+  height: 622px;
+  width: 753px;
+  position: relative;
+  position: absolute;
+  left: 1050px;
+  top:-150px;
+  }
+   
+.a-wrap .a-text-1 {
+  position: absolute;
+  line-height: 200%;
+  text-align: center;
+  font-size: 2rem;
+  color: #444;
+  top: 40px;
+  left: 127px;
+  z-index: 2;
+}
+
+.a-wrap .a-text-2 {
+  position: absolute;
+  z-index: 1;
+  top: -10%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+.cando-things .a-wrap .a-text-1 .top-subtitle{
+  font-size: 3.2rem;
+  font-weight: bold;
+  } 
+
+/*-------------- 右上のコンテンツみんなの興味がわく --------------*/
+
+/*-------------- 左横のコンテンツ-共感しあえる仲間をつくる --------------*/
+.b-wrap {
+  height: 622px;
+  width: 753px;
+  position: relative;
+  position: absolute;
+  top: 120px;
+  left: 150px;
+}
+  .b-wrap .b-text-1 {
+  position: absolute;
+  line-height: 200%;
+  text-align: center;
+  font-size: 2rem;
+  color: #444;
+  top: 120px;
+  left: 250px;
+  z-index: 2;
+
+}
+
+.b-wrap .b-text-2 {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.cando-things .b-wrap .b-text-1 .left-subtitle{
+    font-size: 3.2rem;
+    font-weight: bold;
+  }
+
+/*-------------- 左横のコンテンツ-共感しあえる仲間をつくる --------------*/
+.c-wrap {
+  height: 622px;
+  width: 753px;
+  position: relative;
+  position: absolute;
+  top: 520px;
+  left: 990px;
+}
+   
+.c-wrap .c-text-1{
+  position: absolute;
+  line-height: 200%;
+  text-align: center;
+  font-size: 2rem;
+  color: #444;
+  top: 100px;
+  left: 80px;
+  z-index: 2;
+}
+
+.c-wrap .c-text-2 {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+   }
+
+.cando-things .c-wrap .c-text-1 .buttom-subtitle{
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+/*-------------- 左横のコンテンツ-共感しあえる仲間をつくる --------------*/
