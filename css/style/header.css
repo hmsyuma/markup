@@ -2,6 +2,7 @@
   border-bottom: 4px solid #F8E43E;
   background-color: #fff;
 }
+
 .header-wrap{
   width: 100%;
   height: 80px;
@@ -9,9 +10,9 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  justify-content: space-between;
   align-items: center;
 }
+
 .header .logo {
   width: 125px;
 }
@@ -38,17 +39,17 @@
   padding: .87em 1.6em;
 } 
 
-.service-link-button::before,
-.service-link-button::after {
+.header .service-link-button::before,
+.header .service-link-button::after {
   position: absolute;
   z-index: -1;
   display: block;
   content: '';
 }
 
-.service-link-button,
-.service-link-button::before,
-.service-link-button::after {
+.header .service-link-button,
+.header .service-link-button::before,
+.header .service-link-button::after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -56,17 +57,17 @@
   transition: all .3s;
 }
 
-.service-link-button:hover {
+.header .service-link-button:hover {
   color: #fff;
 }
 
-.service-link-button::after {
+.header .service-link-button::after {
   left: -100%;
   width: 100%;
   height: 100%;
 }
 
-.service-link-button:hover::after {
+.header .service-link-button:hover::after {
   top: 0;
   left: 0;
   background-color: #F8E43E;
