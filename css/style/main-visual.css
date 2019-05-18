@@ -3,8 +3,8 @@
   height: 100%;
   width: 100%;
   position: relative;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
 }
 
 .main-visual{
@@ -34,7 +34,7 @@
   left: 32%;
 }
 
- .main-visual .site-logo-sub{
+.main-visual .site-logo-sub{
   position: absolute;
   top: 55%;
   left: 34%;
@@ -50,8 +50,9 @@
   top: 0;
   left: 0;
 }
+
 .main-visual .scroll-btn {
   width: 6.8%;
   margin-top: 34%;
   margin-left: 47%;
-} 
+}
