@@ -1,0 +1,48 @@
+/* ---------------about--------------- */
+.about-wrap{
+  background-color: #EFEFEF;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.about-wrap .about-title{
+  position: relative;
+  margin-bottom: 6%;
+  padding-top: 8%;
+}
+
+.about-wrap .about-title .about-title-logo{
+  display: inline-block;
+  width: 12%;
+  /* margin: 160px 0 0 25px; */
+}
+
+.about-wrap .about-title .about-title-name{
+  display: inline-block;
+  font-size: 1.6vw;
+  font-weight: bold;
+  margin-left: 1%; 
+  /* margin: 150px 0 0 25px; */
+}
+
+.about-wrap .about-title .about-title-img{
+  position: absolute;
+  width: 12%;
+  top: 62%; 
+  left: 61%;
+}
+
+.about-wrap .section-sentence{
+  text-align: center;
+  font-size: 1vw;
+  color: #444;
+}
+    
+.about-wrap .section-sentence .section-paragraph{
+  margin-bottom: 1.2%;
+}
+    
+.about-wrap .section-sentence .section-paragraph-space{
+  margin-bottom: 3%;
+}

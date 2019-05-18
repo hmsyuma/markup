@@ -1,0 +1,118 @@
+/* ---------------case study--------------- */
+.case-study{
+  text-align: center;
+  background-image: url("../images/newimgs/case-bg.png");
+  width:100%;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+
+.case-title{
+  padding-top: 212px; 
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: 100px;
+}
+
+.wrap {
+  display: flex;
+  justify-content: stretch;
+}
+
+.slider{
+margin: 180px 400px 330px 400px;
+}
+
+/* .sl-img{
+  margin: 0 auto;
+} */
+
+/* .case-study .slider .slide-item{
+    width: 70%;
+} */
+
+.slide-item{
+    width: 1200px;
+
+}
+
+.slide-item .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sl-img{
+    padding-top: 120px;
+    padding-left:0; 
+}
+
+.slider .flex .textarea{
+  margin: 0 auto;
+}
+
+.slider .textarea h2{
+  font-size: 4.0rem;
+  text-align: left;
+  line-height: 150%;
+  margin-bottom: 40px; 
+}
+
+
+.slide-text{
+  font-size: 20px;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.slide-text-b {
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 0px;
+    border-bottom: 20px solid #F8E43E;
+    margin-top: 0px;       /* 上線の外側の余白はナシ */
+    padding-top: 0px;      /* 上線の内側の余白はナシ */
+    margin-bottom: 0.3em;  /* 下線の外側の余白量 */
+    padding-bottom: 60px; /* 下線の内側の余白量 */
+  }
+
+.topic{
+  font-weight: bold;
+  font-size: 40px;
+  text-align: left;
+  margin-bottom: 30px; 
+ }
+
+  .slide-name {
+  font-size: 1.8rem;
+  text-align: right;
+  font-weight: bold;
+  margin-bottom: 40px;
+ }
+
+ .slide-arrow {
+  display: flex;
+  width: 32px;
+  height: 82px;
+  margin-bottom: 47px;
+  margin-top: 150px
+  }
+
+
+.slide-prearrow{
+    position: absolute;
+    top:200px;
+    right:-100px;
+}
+
+.slide-nextarrow{
+    position: absolute;
+    top:200px;
+    left:-100px;
+}
+
+
+/* ---------------case study--------------- */
