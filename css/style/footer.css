@@ -11,7 +11,7 @@
 .footer .footer-bg{
   width: 100%;
   height: 60px; /*高さ後ほど*/
-  background-image: url("../images/newimgs/footer-bg.png");
+  background-image: url("../../images/footer-bg.png");
   background-repeat: repeat-x;
   background-color:#F2F2F2;
   /*素材の問題要修正 */
