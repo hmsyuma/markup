@@ -3,16 +3,7 @@
   height: 100%;
   width: 100%;
   position: relative;
-  justify-content: center;
-  align-items: center;
-}
-
-.main-visual{
-  height: 100%;
-  width: 100%;
-  position: relative;
   justify-content: center; 
-  align-items: center; 
 }
 
 .main-visual::before{
@@ -26,20 +17,22 @@
   background-repeat: no-repeat;
 }
 
-.main-visual .site-logo{
+.main-visual .site-title{
   position: absolute;
-  height: 23%;
-  width: 36%;
-  top: 26%;
-  left: 32%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
 }
 
-.main-visual .site-logo-sub{
-  position: absolute;
-  top: 55%;
-  left: 34%;
-  height: 10%;
+.main-visual .site-logo .site-title{
+  height: 23%;
   width: 36%;
+}
+
+.main-visual .site-title .site-logo-sub {
+  margin-top: 45px; 
+  text-align: center;
   font-size: 2.1vw;
   font-weight: bold;
   color: #FFF;
@@ -47,12 +40,9 @@
 
 .main-visual .scroll-btn{
   position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.main-visual .scroll-btn {
+  bottom:0%;
+  right:50%;
+  -webkit-transform: translate(50%, 50%);
+  transform: translate(50%, 50%); 
   width: 6.8%;
-  margin-top: 34%;
-  margin-left: 47%;
 }
