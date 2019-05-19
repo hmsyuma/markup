@@ -19,31 +19,17 @@
   text-align: center;
 }
 
-.cando-things .cando-wrap{
-  position: relative;
-  width: 1080px;
-  height: 900px;
-  margin: 0 auto;
-  background-image: url("../../images/cando-prf.png");
-  background-repeat: no-repeat;
-  background-size: 270px 550px;
-  background-position: center;
-}
-
 .cando-things .cando-item{
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: contain;
-  background-repeat: no-repeat;
   line-height: 2;
-  text-align: center;
 }
 
 .cando-things .cando-item .text{
-  position: relative;
   color: #444;
+  position: relative;
+}
+
+.cando-things .cando-item .subtitle{
+  font-weight: bold;
 }
 
 .cando-things .cando-item .text::after{
@@ -54,67 +40,138 @@
   background-repeat: no-repeat;
 }
 
-.cando-things .cando-item .subtitle{
-  font-size: 2.2rem;
-  font-weight: bold;
-}
-
-.cando-things .cando-item .paragraph{
-  text-align: center;
-  font-size: 1.4rem;
-}
-
-/*interest*/
-.cando-things .cando-item.interest{
-  width: 400px;
-  height: 300px;
-  right: 120px;
-  top: 0;
-  background-image: url("../../images/cando-item-bg-interest.svg");
-}
-
 .cando-things .cando-item.interest .text::after{
-  width: 240px;
-  height: 210px;
   background-image: url("../../images/cando-item-icon-interest.png");
-  left: 180px;
-  top: 140px;
-}
-
-/*sympathy*/
-.cando-things .cando-item.sympathy{
-  width: 400px;
-  height: 300px;
-  left: 75px;
-  top: 250px;
-  background-image: url("../../images/cando-item-bg-sympathy.svg");
 }
 
 .cando-things .cando-item.sympathy .text::after{
-  width: 225px;
-  height: 165px;
   background-image: url("../../images/cando-item-icon-sympathy.png");
-  left: -140px;
-  top: 160px;
-}
-
-/*action*/
-.cando-things .cando-item.action{
-  width: 360px;
-  height: 240px;
-  right: 170px;
-  bottom: 130px;
-  background-image: url("../../images/cando-item-bg-action.svg");
-}
-
-.cando-things .cando-item.action .text{
-  margin-left: -50px;
 }
 
 .cando-things .cando-item.action .text::after{
-  width: 225px;
-  height: 165px;
   background-image: url("../../images/cando-item-icon-action.png");
-  left: 230px;
-  bottom: -110px;
+}
+
+/* PC */
+@media screen and (min-width:1081px){
+  .cando-things .cando-wrap{
+    position: relative;
+    width: 1080px;
+    height: 900px;
+    margin: 0 auto;
+    background-image: url("../../images/cando-prf.png");
+    background-repeat: no-repeat;
+    background-size: 270px 550px;
+    background-position: center;
+  }
+
+  .cando-things .cando-item{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+
+  .cando-things .cando-item .subtitle{
+    font-size: 2.2rem;
+  }
+
+  .cando-things .cando-item .paragraph{
+    text-align: center;
+    font-size: 1.4rem;
+  }
+
+  /*interest*/
+  .cando-things .cando-item.interest{
+    width: 400px;
+    height: 300px;
+    right: 120px;
+    top: 0;
+    background-image: url("../../images/cando-item-bg-interest.svg");
+  }
+
+  .cando-things .cando-item.interest .text::after{
+    width: 240px;
+    height: 210px;
+    left: 180px;
+    top: 140px;
+  }
+
+  /*sympathy*/
+  .cando-things .cando-item.sympathy{
+    width: 400px;
+    height: 300px;
+    left: 75px;
+    top: 250px;
+    background-image: url("../../images/cando-item-bg-sympathy.svg");
+  }
+
+  .cando-things .cando-item.sympathy .text::after{
+    width: 225px;
+    height: 165px;
+    left: -140px;
+    top: 160px;
+  }
+
+  /*action*/
+  .cando-things .cando-item.action{
+    width: 360px;
+    height: 240px;
+    right: 170px;
+    bottom: 130px;
+    background-image: url("../../images/cando-item-bg-action.svg");
+  }
+
+  .cando-things .cando-item.action .text{
+    margin-left: -50px;
+  }
+
+  .cando-things .cando-item.action .text::after{
+    width: 225px;
+    height: 165px;
+    left: 230px;
+    bottom: -110px;
+  }
+}
+
+/* SP */
+@media screen and (max-width:1080px){
+  .cando-things{
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  .cando-things .cando-wrap{
+    margin: 50px 0 80px;
+  }
+
+  .cando-things .cando-item{
+    background-color: #FAEA6B;
+    padding: 340px 20px 20px;
+
+  }
+  .cando-things .cando-item + .cando-item{
+    margin-top: 40px;
+  }
+
+  .cando-things .cando-item .subtitle{
+    font-size: 2.8rem;
+    text-align: center;
+  }
+  .cando-things .cando-item .paragraph{
+    font-size: 2rem;
+  }
+  .cando-things .cando-item .paragraph br{
+    display: none;
+  }
+  .cando-things .cando-item .text::after{
+    width: 280px;
+    height: 240px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: -292px;
+    left: 50%;
+  }
 }
