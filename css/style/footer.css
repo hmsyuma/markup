@@ -3,24 +3,24 @@
   text-align: center;
   background-color: #868686;
   width: 100%;
-  /* height: 650px; */
   font-weight: bold;
   color: #FFF;
 }
 
-.footer .footer-bg{
+.footer::before{
   width: 100%;
-  height: 60px; /*高さ後ほど*/
+  height: 60px;
+  display: block;
+  content: "";
   background-image: url("../../images/footer-bg.png");
   background-repeat: repeat-x;
-  background-color:#F2F2F2;
-  /*素材の問題要修正 */
- }
+  background-color:#FFF;
+  }
 
 .footer .h2{
-  font-size: 3.7vw;
-  margin-bottom:3.7%;
-  padding-top: 5.2%;
+  font-size: 7.5rem;
+  margin-bottom: 72px;
+  padding-top: 137px;
 }
 
 .footer-ul{
@@ -52,5 +52,4 @@
   padding-bottom: 5.7%;
   font-size: 1.5rem;
 }
-
 /* ---------------footer--------------- */
