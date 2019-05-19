@@ -3,6 +3,7 @@
   background-color: #EFEFEF;
   text-align: center;
   width: 100%;
+  padding-bottom: 63px;
 }
 
 .about_us .about_title{
@@ -27,8 +28,7 @@
 
 .about_us .about_title .about_title_logo{
   width: 262px;
-  margin-bottom: -10px;
-  margin-right: 25px;
+  margin: 0 25px -10px 0;
 }
 
 .about_us .section_sentence{
@@ -42,4 +42,42 @@
   line-height: 200%;
 }
 
+.about_us .section_sentence .section_paragraph + .section_paragraph{
+  padding-top: 2em;
+}
 
+/* SP */
+@media screen and (max-width:1080px){
+  .about_us .about_title{
+    padding-top: 310px;
+    margin-bottom: 45px;
+  }
+
+  .about_us .about_title::after{
+    right: 50%;
+    width: 221px;
+    height: 177px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width:600px){
+  .about_us{
+    padding-bottom: 0;
+  }
+
+  .about_us .about_title .about_title_logo{
+    width: 50%;
+    margin: 0 0 -5px 0;
+  }
+
+  .about_us .section_sentence .section_paragraph{
+    padding: 0 16px;
+    text-align: left;
+  }
+
+  .about_us .section_sentence .section_paragraph br{
+    display: none;
+  }
+}
