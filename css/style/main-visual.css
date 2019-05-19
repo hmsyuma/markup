@@ -17,7 +17,7 @@
   background-repeat: no-repeat;
 }
 
-.main-visual .site-title{
+.main-visual .main-visual-title{
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -25,12 +25,12 @@
   left: 50%;
 }
 
-.main-visual .site-title .main-visual-logo{
+.main-visual .main-visual-title .main-visual-logo{
   min-width: 300px;
   margin: 0 auto;
 }
 
-.main-visual .site-title .site-sub-text{
+.main-visual .main-visual-title .main-visual-sub-text{
   margin-top: 1em;
   text-align: center;
   font-size: 2.1vw;
@@ -50,7 +50,7 @@
 
 /* SP */
 @media screen and (max-width:1080px){
-  .main-visual .site-title .site-sub-text{
+  .main-visual .main-visual-title .main-visual-sub-text{
     font-size: 18px;
   }
 }
