@@ -1,145 +1,120 @@
-
-/* ---------------cando-things--------------- */
 .cando-things{
   width: 100%;
   background-color: #fff;
-  text-align: center;
-} 
+}
 
-.about-bg{
-  height: 85px;
-  background-image: url("../../images/about-bg.png");
+.cando-things::before{
+  content: "";
+  display: block;
+  height: 16px;
+  margin: 0 0 109px;
+  background-image: url("../../images/cando-things-bg.svg");
   background-repeat: repeat-x;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 5.5%; 
- }
+  background-color: #EFEFEF;
+}
 
-.cando-title{
+.cando-things .cando-title{
   font-size: 3.2rem;
   font-weight: bold;
-  margin-bottom: 306px;
-}
- 
-.cando-things .cando-wrap .cando-profile img{
-  position: absolute;
-  top:0px;
-  left:388px;
-  height: 553px;
-  width: 270px; 
+  text-align: center;
 }
 
-.cando-wrap{
-  align-items: center;
-  height: 900px;
+.cando-things .cando-wrap{
+  position: relative;
   width: 1080px;
-  position: relative;
-  margin: 0 auto
-} 
+  height: 900px;
+  margin: 0 auto;
+  background-image: url("../../images/cando-prf.png");
+  background-repeat: no-repeat;
+  background-size: 270px 550px;
+  background-position: center;
+}
 
-/*-------------- 右上のコンテンツみんなの興味がわく --------------*/
-.a-wrap {
-  height: 421px;
-  width: 503px; 
-  position: relative;
+.cando-things .cando-item{
   position: absolute;
-  right:20px;
-  top:-180px;
-  }
-   
-.a-wrap .a-text-1 {
-  position: absolute;
-  line-height: 200%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  line-height: 2;
   text-align: center;
-  font-size: 1.4rem;
+}
+
+.cando-things .cando-item .text{
+  position: relative;
   color: #444;
-  top: 70px;
-  left: 80px;
-  z-index: 2;
 }
 
-.a-wrap .a-text-2 {
+.cando-things .cando-item .text::after{
   position: absolute;
-  z-index: 1;
-  top:  0%;
-  left: 0%;
-  width: 100%;
-  height: 100%;
+  content: "";
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-.cando-things .a-wrap .a-text-1 .top-subtitle{
+.cando-things .cando-item .subtitle{
   font-size: 2.2rem;
   font-weight: bold;
-  } 
-
-/*-------------- 右上のコンテンツみんなの興味がわく --------------*/
-
-/*-------------- 左横のコンテンツ-共感しあえる仲間をつくる --------------*/
-.b-wrap {
-  height: 383px;
-  width: 473px;
-  position: relative;
-  position: absolute;
-  top: 78px;
-  left: 8px;
 }
-  .b-wrap .b-text-1 {
-  position: absolute;
-  line-height: 200%;
+
+.cando-things .cando-item .paragraph{
   text-align: center;
   font-size: 1.4rem;
-  color: #444;
-  top: 80px;
-  left: 140px;
-  z-index: 2;
 }
 
-.b-wrap .b-text-2 {
-  position: absolute;
-  z-index: 1;
+/*interest*/
+.cando-things .cando-item.interest{
+  width: 400px;
+  height: 300px;
+  right: 120px;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  background-image: url("../../images/cando-item-bg-interest.svg");
 }
 
-.cando-things .b-wrap .b-text-1 .left-subtitle{
-    font-size: 2.2rem;
-    font-weight: bold;
-  }
-
-/*-------------- 左横のコンテンツ-共感しあえる仲間をつくる --------------*/
-.c-wrap {
-  height: 408px;
-  width: 473px;
-  position: relative;
-  position: absolute;
-  bottom: 140px;
-  right: 70px;
-}
-   
-.c-wrap .c-text-1{
-  position: absolute;
-  line-height: 200%;
-  text-align: center;
-  font-size: 1.4rem;
-  color: #444;
-  bottom: 210px;
-  right: 180px;
-  z-index: 2;
+.cando-things .cando-item.interest .text::after{
+  width: 240px;
+  height: 210px;
+  background-image: url("../../images/cando-item-icon-interest.png");
+  left: 180px;
+  top: 140px;
 }
 
-.c-wrap .c-text-2 {
-  position: absolute;
-  z-index: 1;
-  bottom: 0px;
-  right: 0;
-  width: 100%;
-  height: 100%;
-   }
-
-.cando-things .c-wrap .c-text-1 .buttom-subtitle{
-  font-size: 2.2rem;
-  font-weight: bold;
+/*sympathy*/
+.cando-things .cando-item.sympathy{
+  width: 400px;
+  height: 300px;
+  left: 75px;
+  top: 250px;
+  background-image: url("../../images/cando-item-bg-sympathy.svg");
 }
-/*-------------- 左横のコンテンツ-共感しあえる仲間をつくる --------------*/
+
+.cando-things .cando-item.sympathy .text::after{
+  width: 225px;
+  height: 165px;
+  background-image: url("../../images/cando-item-icon-sympathy.png");
+  left: -140px;
+  top: 160px;
+}
+
+/*action*/
+.cando-things .cando-item.action{
+  width: 360px;
+  height: 240px;
+  right: 170px;
+  bottom: 130px;
+  background-image: url("../../images/cando-item-bg-action.svg");
+}
+
+.cando-things .cando-item.action .text{
+  margin-left: -50px;
+}
+
+.cando-things .cando-item.action .text::after{
+  width: 225px;
+  height: 165px;
+  background-image: url("../../images/cando-item-icon-action.png");
+  left: 230px;
+  bottom: -110px;
+}
