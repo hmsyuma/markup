@@ -72,3 +72,14 @@
   left: 0;
   background-color: #F8E43E;
 }
+
+/* SP */
+@media screen and (max-width:1080px){
+  .header{
+    padding: 0 24px;
+  }
+  .header .nav-wrap,
+  .header .service-link-button{
+    display: none;
+  }
+}
