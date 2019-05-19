@@ -1,58 +1,43 @@
-/* ---------------about--------------- */
-.about-us{
+/* ---------------about_-------------- */
+.about_us{
   background-color: #EFEFEF;
   text-align: center;
   width: 100%;
 }
 
-.about-us .about-title{
+.about_us .about_title{
   position: relative;
   margin-bottom: 120px;
   padding-top: 158px;
   font-size: 3.2rem;
 }
 
-.about-us .about-title::after{
+.about_us .about_title::after{
     position: absolute;
     content: "";
     display: block;
     width: 268px;
     height: 216px;
-    background-image: url("/Users/shimohozuma/rukaruka/images/shake-hunds.png");
+    background-image: url("../../images/shake-hunds.png");
     -webkit-transform: translateX(50%);
     transform: translateX(50%);
     top: 133px;
     right: calc(50% - 350px);
   }
 
-.about-us .about-title .about-title-logo{
+.about_us .about_title .about_title_logo{
   width: 262px;
   margin-bottom: -10px;
   margin-right: 25px;
 }
 
-/* .about-us .about-title .about-title-name{
-  display: inline-block;
-  font-size: 1.6vw;
-  font-weight: bold;
-  margin-left: 1%; 
-  /* margin: 150px 0 0 25px; */
-/* } */
-
-/* .about-us .about-title .about-title-img{
-  position: absolute;
-  width: 12%;
-  top: 62%; 
-  left: 61%;
-} */ 
-
-.about-us .section-sentence{
+.about_us .section_sentence{
   text-align: center;
   font-size: 2rem;
   color: #444;
 }
 
-.about-us .section-sentence .section-paragraph{
+.about_us .section_sentence .section_paragraph{
   font-size: 2rem;
   line-height: 200%;
 }
