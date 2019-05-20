@@ -1,118 +1,85 @@
-/* ---------------case study--------------- */
 .case-study{
   text-align: center;
-  background-image: url("../../images/case-bg.png");
-  width:100%;
-  background-repeat: no-repeat;
-  background-size:cover;
+  background: linear-gradient(#f2f2f2, #fff);
 }
 
-
 .case-title{
-  padding-top: 212px; 
+  padding-top: 15%;
   font-size: 3.2rem;
   font-weight: bold;
   margin-bottom: 100px;
 }
 
-.wrap {
-  display: flex;
-  justify-content: stretch;
+.player{
+  width: 592px;
+  height: 316px;
+  margin: 101px auto 187px;
+  background-color: #F8E43E;
+  text-align: center;
+  font-size: 4.0rem;
 }
 
-.slider{
-margin: 180px 400px 330px 400px;
+.case-study .slider{
+  width: 834px;
+  margin: 187px auto 163px; 
 }
 
-/* .sl-img{
-  margin: 0 auto;
-} */
-
-/* .case-study .slider .slide-item{
-    width: 70%;
-} */
-
-.slide-item{
-    width: 1200px;
-
-}
-
-.slide-item .flex {
+.case-study .slider .slide-item .flex{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.sl-img{
-    padding-top: 120px;
-    padding-left:0; 
+.case-study .slider .slide-item .flex .sl-img{
+  padding-top: 120px;
+  width: 337px;
 }
 
-.slider .flex .textarea{
+.case-study .slider .slide-item .flex .textarea{
   margin: 0 auto;
 }
 
-.slider .textarea h2{
-  font-size: 4.0rem;
+.case-study .slider .slide-item .flex .textarea .topic{
+  font-weight: bold;
+  font-size: 3.3rem;
   text-align: left;
+  margin-bottom: 20px;
   line-height: 150%;
-  margin-bottom: 40px; 
 }
 
-
-.slide-text{
-  font-size: 20px;
-  text-align: left;
+.case-study .slider .slide-item .flex .textarea .slide-name{
+  font-size: 1.4rem;
+  text-align: right;
   font-weight: bold;
   margin-bottom: 30px;
 }
 
-.slide-text-b {
-    font-size: 20px;
-    text-align: left;
-    font-weight: bold;
-    margin-bottom: 0px;
-    border-bottom: 20px solid #F8E43E;
-    margin-top: 0px;       /* 上線の外側の余白はナシ */
-    padding-top: 0px;      /* 上線の内側の余白はナシ */
-    margin-bottom: 0.3em;  /* 下線の外側の余白量 */
-    padding-bottom: 60px; /* 下線の内側の余白量 */
-  }
-
-.topic{
-  font-weight: bold;
-  font-size: 40px;
+.case-study .slider .slide-item .flex .textarea .slide-text{
+  font-size: 1.6rem;
   text-align: left;
-  margin-bottom: 30px; 
- }
-
-  .slide-name {
-  font-size: 1.8rem;
-  text-align: right;
   font-weight: bold;
-  margin-bottom: 40px;
- }
+  border-bottom: 20px solid #F8E43E;
+  line-height: 200%;
+  margin-bottom: 0.3em;
+  padding-bottom: 30px;
+}
 
- .slide-arrow {
+.case-study .slide-arrow{
   display: flex;
-  width: 32px;
-  height: 82px;
-  margin-bottom: 47px;
-  margin-top: 150px
-  }
-
-
-.slide-prearrow{
-    position: absolute;
-    top:200px;
-    right:-100px;
 }
 
-.slide-nextarrow{
-    position: absolute;
-    top:200px;
-    left:-100px;
+.case-study .slide-prearrow,
+.case-study .slide-nextarrow{
+  position: absolute;
+  top: 200px;
+  width: 21px;
+  height: 56px;
 }
 
+.case-study .slide-prearrow{
+  right: -68px;
+}
 
-/* ---------------case study--------------- */
+.case-study .slide-nextarrow{
+  left: -18px;
+}
