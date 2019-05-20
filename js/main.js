@@ -41,3 +41,8 @@ $('.hamburger-button').click(function(){
   $('.nav-wrap').toggleClass('is-open');
   $('.body-wrap').toggleClass('is-overlay');
 });
+
+$('.close-nav').click(function(){
+  $('.nav-wrap').removeClass('is-open');
+  $('.body-wrap').removeClass('is-overlay');
+})
