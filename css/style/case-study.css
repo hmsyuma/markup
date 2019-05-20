@@ -1,15 +1,11 @@
 /* ---------------case study--------------- */
 .case-study{
   text-align: center;
-  background-image: url("../../images/case-bg.png");
-  width:100%;
-  background-repeat: no-repeat;
-  background-size:cover;
+  background: linear-gradient(#f2f2f2, #fff);
 }
 
-
 .case-title{
-  padding-top: 212px; 
+  padding-top: 15%;
   font-size: 3.2rem;
   font-weight: bold;
   margin-bottom: 100px;
