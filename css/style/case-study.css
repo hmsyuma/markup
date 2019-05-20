@@ -125,6 +125,7 @@
 
   .case-study .slider .slide-item .flex .textarea{
     margin-top: 45px;
+    max-width: 600px;
   }
 
   .case-study .slider .slide-item .flex .textarea .topic{
