@@ -1,4 +1,3 @@
-/* ---------------about_-------------- */
 .about_us{
   background-color: #EFEFEF;
   text-align: center;
@@ -14,17 +13,17 @@
 }
 
 .about_us .about_title::after{
-    position: absolute;
-    content: "";
-    display: block;
-    width: 268px;
-    height: 216px;
-    background-image: url("../../images/shake-hunds.png");
-    -webkit-transform: translateX(50%);
-    transform: translateX(50%);
-    top: 133px;
-    right: calc(50% - 350px);
-  }
+  position: absolute;
+  content: "";
+  display: block;
+  width: 268px;
+  height: 216px;
+  background-image: url("../../images/shake-hunds.png");
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%);
+  top: 133px;
+  right: calc(50% - 350px);
+}
 
 .about_us .about_title .about_title_logo{
   width: 262px;
