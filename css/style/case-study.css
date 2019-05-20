@@ -21,7 +21,7 @@
 
 .case-study .slider{
   width: 834px;
-  margin: 187px auto 163px; 
+  margin: 187px auto 163px;
 }
 
 .case-study .slider .slide-item .flex{
@@ -82,4 +82,66 @@
 
 .case-study .slide-nextarrow{
   left: -18px;
+}
+
+/* SP */
+@media screen and (max-width:1080px){
+  .player{
+    width: 100%;
+    height: auto;
+  }
+
+  .case-study .slider{
+    width: 100%;
+    margin: 0 0 70px;
+    padding: 0 40px;
+  }
+
+  .case-study .slider .slick-track{
+    width: auto !important;
+    transform: translate3d(0, 0, 0) !important;
+  }
+
+  .case-study .slider .slick-list{
+    height: auto !important;
+  }
+
+  .case-study .slider .slick-arrow{
+    display: none !important;
+  }
+
+  .case-study .slider .slide-item .flex{
+    flex-direction: column-reverse;
+  }
+
+  .case-study .slider .slide-item .flex .sl-img{
+    padding: 0;
+    width: 100%;
+  }
+
+  .case-study .slider .slide-item .flex .sl-img img{
+    margin: 0 auto;
+  }
+
+  .case-study .slider .slide-item .flex .textarea{
+    margin-top: 45px;
+    max-width: 600px;
+  }
+
+  .case-study .slider .slide-item .flex .textarea .topic{
+    font-size: 24px;
+  }
+
+  .case-study .slider .slide-item .flex .textarea .slide-name{
+    font-size: 20px;
+  }
+
+  .case-study .slider .slide-item .flex .textarea .slide-text{
+    border: none;
+    font-size: 14px;
+  }
+
+  .case-study .slider .slide-item .flex .textarea .slide-text br{
+    display: none;
+  }
 }
