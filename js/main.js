@@ -42,7 +42,7 @@ $('.hamburger-button').click(function(){
   $('.body-wrap').toggleClass('is-overlay');
 });
 
-$('.close-nav').click(function(){
+$('.nav-wrap').click(function(){
   $('.nav-wrap').removeClass('is-open');
   $('.body-wrap').removeClass('is-overlay');
 })
