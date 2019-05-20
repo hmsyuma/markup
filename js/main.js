@@ -1,4 +1,4 @@
-$(function slicSslider() {
+$(function slickSlider() {
     if(!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
         $('.slider').slick({
             infinite: true,
