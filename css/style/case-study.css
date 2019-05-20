@@ -140,7 +140,7 @@
     font-size: 14px;
   }
 
-  .case-study .slider .slide-item .flex .textarea br{
+  .case-study .slider .slide-item .flex .textarea .slide-text br{
     display: none;
   }
 }
