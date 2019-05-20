@@ -13,7 +13,7 @@ $('.hamburger-button').click(function(){
 });
 
 $(function () {
-$('.page-header').each(function () {
+$('.header').each(function () {
   var $window = $(window), 
   $header = $(this), 
 　headerOffsetTop = $header.offset().top;
