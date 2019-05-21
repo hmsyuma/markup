@@ -2,8 +2,8 @@ $(function(){
     $('.slider').slick({
         infinite: true,
         adaptiveHeight: true,
-        prevArrow: '<img src="images/arrow-right.png" class="slide-prearrow">',
-        nextArrow: '<img src="images/arrow-left.png" class="slide-nextarrow">'
+        nextArrow: '<img src="images/arrow-right.png" class="slide-prearrow">',
+        prevArrow: '<img src="images/arrow-left.png" class="slide-nextarrow">'
     });
 });
 
@@ -42,9 +42,19 @@ $(function allowBtn() {
     $('.allow-btn').each(function () {
         var $el = $(scrollableElement('html', 'body'));
         $(this).on('click', function (event) {
-            console.log("hoge");
             event.preventDefault();
-            $el.animate({ scrollTop: 700 }, 500);
+            var w = document.documentElement.scrollWidth;
+            console.log(w)
+            if(1080 <= w){
+               console.log(1)
+               $el.animate({ scrollTop: 800 }, 500);
+            } else if(695 < w ) {
+                console.log(2)
+              $el.animate({ scrollTop: 400 }, 500);  
+            } else {
+                console.log(3)
+              $el.animate({ scrollTop: 450 }, 500);
+            }
         });
     });
    function scrollableElement (elements) {

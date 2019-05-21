@@ -48,6 +48,7 @@
   background:none;
   border:0;
   outline:0;
+  z-index: 5;
 }
 
 /* SP */
