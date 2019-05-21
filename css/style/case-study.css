@@ -102,6 +102,10 @@
     transform: translate3d(0, 0, 0) !important;
   }
 
+  .case-study .slider .slick-slide:first-child,
+  .case-study .slider .slick-slide:nth-child(n+5){
+    display: none !important;
+  }
 
   .case-study .slider .slick-list{
     height: auto !important;
