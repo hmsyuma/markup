@@ -18,3 +18,34 @@ $(function hamburgerMenu() {
         $('.body-wrap').removeClass('is-overlay');
     })
 });
+
+$(function allowBtn() {
+  $('.allow-btn').each(function () {
+
+    var $el = $(scrollableElement('html', 'body'));
+    $(this).on('click', function (event) {
+      event.preventDefault();
+      $el.animate({ scrollTop: 700 }, 500);
+      });
+  });
+
+  function scrollableElement (elements) {
+  var i, len, el, $el, scrollable;
+  for (i = 0, len = arguments.length; i < len; i++) {
+      el = arguments[i],
+      $el = $(el);
+      if ($el.scrollTop() > 0) {
+      return el;
+      } else {
+      $el.scrollTop(1);
+      scrollable = $el.scrollTop() > 0;
+      $el.scrollTop(0);
+      if (scrollable) {
+          return el;
+          }
+      }
+  }
+  return [];
+  }
+
+});
