@@ -21,7 +21,6 @@ $(function hamburgerMenu() {
     })
 });
 
-
 $(function allowBtn() {
   $('.allow-btn').each(function () {
 
