@@ -45,6 +45,9 @@
   transform: translate(50%, 50%);
   width: 6.8%;
   min-width: 76px;
+  background:none;
+  border:0;
+  outline:0;
 }
 
 /* SP */
