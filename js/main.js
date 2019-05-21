@@ -8,44 +8,61 @@ $(function(){
 });
 
 $(function hamburgerMenu() {
-    $('.hamburger-button').click(function(){
-        $('.nav-wrap').toggleClass('is-open');
-        $('.body-wrap').toggleClass('is-overlay');
-    });
-
-    $('.nav-wrap').click(function(){
-        $('.nav-wrap').removeClass('is-open');
-        $('.body-wrap').removeClass('is-overlay');
-    })
-});
-
-$(function allowBtn() {
-  $('.allow-btn').each(function () {
-
-    var $el = $(scrollableElement('html', 'body'));
-    $(this).on('click', function (event) {
-      event.preventDefault();
-      $el.animate({ scrollTop: 700 }, 500);
-      });
+  $('.hamburger-button').click(function(){
+      $('.nav-wrap').toggleClass('is-open');
+      $('.body-wrap').toggleClass('is-overlay');
   });
 
-  function scrollableElement (elements) {
-  var i, len, el, $el, scrollable;
-  for (i = 0, len = arguments.length; i < len; i++) {
-      el = arguments[i],
-      $el = $(el);
-      if ($el.scrollTop() > 0) {
-      return el;
-      } else {
-      $el.scrollTop(1);
-      scrollable = $el.scrollTop() > 0;
-      $el.scrollTop(0);
-      if (scrollable) {
-          return el;
-          }
-      }
-  }
-  return [];
-  }
-
+  $('.nav-wrap').click(function(){
+      $('.nav-wrap').removeClass('is-open');
+      $('.body-wrap').removeClass('is-overlay');
+  })
 });
+
+
+
+$(function stickyHeader() {
+    $('.header').each(function () {
+        var $window = $(window), 
+        $header = $(this), 
+        headerOffsetTop = $header.offset().top;
+
+        $window.on('scroll', function () {
+            if ($window.scrollTop() > headerOffsetTop) {
+                $header.addClass('sticky');
+            } else {
+                $header.removeClass('sticky');
+            }
+        });
+    });
+});
+
+
+$(function allowBtn() {
+    $('.allow-btn').each(function () {
+        var $el = $(scrollableElement('html', 'body'));
+        $(this).on('click', function (event) {
+            console.log("hoge");
+            event.preventDefault();
+            $el.animate({ scrollTop: 700 }, 500);
+        });
+    });
+   function scrollableElement (elements) {
+        var i, len, el, $el, scrollable;
+        for (i = 0, len = arguments.length; i < len; i++) {
+            el = arguments[i],
+            $el = $(el);
+            if ($el.scrollTop() > 0) {
+                return el;
+            } else {
+                $el.scrollTop(1);
+                scrollable = $el.scrollTop() > 0;
+                $el.scrollTop(0);
+                if (scrollable) {
+                    return el;
+                }
+            }
+        }
+        return [];
+    }
+})
