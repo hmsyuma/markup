@@ -45,6 +45,7 @@
   padding-top: 2em;
 }
 
+
 /* SP */
 @media screen and (max-width:1080px){
   .about_us .about_title{
@@ -62,11 +63,7 @@
 }
 
 @media screen and (max-width:600px){
-  .about_us{
-    padding-bottom: 0;
-  }
-
-  .about_us .about_title .about_title_logo{
+    .about_us .about_title .about_title_logo{
     width: 50%;
     margin: 0 0 -5px 0;
   }
