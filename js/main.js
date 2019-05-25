@@ -44,16 +44,12 @@ $(function allowBtn() {
         $(this).on('click', function (event) {
             event.preventDefault();
             var w = document.documentElement.scrollWidth;
-            console.log(w)
             if(1080 <= w){
-               console.log(1)
-               $el.animate({ scrollTop: 800 }, 500);
+               $el.animate({ scrollTop: 550 }, 500);
             } else if(695 < w ) {
-                console.log(2)
               $el.animate({ scrollTop: 400 }, 500);  
             } else {
-                console.log(3)
-              $el.animate({ scrollTop: 450 }, 500);
+              $el.animate({ scrollTop: 400 }, 500);
             }
         });
     });

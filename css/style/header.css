@@ -75,6 +75,21 @@
   display: none;
 }
 
+.about_us{
+    margin-top:-80px !important;
+    padding-top:80px !important;
+  }
+
+.link2{
+    margin-top:-250px !important;
+    padding-top:250px !important;
+  }
+
+.link3{
+    margin-top:-300px !important;
+    padding-top:300px !important;
+}
+
 /* PC */
 @media screen and (min-width:1081px){
   .header .nav-wrap ul li{
@@ -88,6 +103,7 @@
     border-left: 1px solid #444;
   }
 }
+
 /* SP */
 @media screen and (max-width:1080px){
   .header .header-wrap{

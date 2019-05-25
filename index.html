@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="css/slick/slick-theme.css" media="screen">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/fade.js"></script>
     <script src="js/main.js"></script>
     <title>Buddyup</title>
-</head> 
+</head>
 
  <body>
   <div class="body-wrap">
@@ -26,11 +27,11 @@
         </div>
         <nav class="nav-wrap is-close">
           <ul class="nav">
-            <li><a href="#about-buddyup">Buddyup!とは?</a></li>
-            <li><a href="#cando-link">できること</a></li>
-            <li><a href="#case-study-link">活用事例</a></li>
+            <li><a href="#link-1">Buddyup!とは?</a></li>
+            <li><a href="#link-2">できること</a></li>
+            <li><a href="#link-3">活用事例</a></li>
             <li><a href="#footer-link">SAN-ZEN</a></li>
-            <li><a href="#">オーナーの方はこちら</a></li>
+            <!--<li><a href="#">オーナーの方はこちら</a></li>-->
           </ul>
         </nav>
         <div class="hamburger-button">
@@ -39,30 +40,29 @@
         </div>
         <a class="service-link-button">Buddyupを使ってみる</a>
       </div>
-    </header> 
+    </header>
 
     <div class="main-visual">
       <div class="main-visual-title">
-        <div class="main-visual-logo">
+        <div class="main-visual-logo fadein">
           <img src="images/main-visual-logo.png" alt="buddyup">
         </div>
-        <div class="main-visual-sub-text">ー　未来を作る、仲間とつながる　ー</div>
+        <div class="main-visual-sub-text fadein">ー　未来を作る、仲間とつながる　ー</div>
       </div>
-      
+
       <button type="button" class="allow-btn">
         <img src="images/top-button.png" alt="button">
        </button>
 
     </div>
 
-    <div class="about_us" id="about_buddyup">
-
-        <h2 class="about_title">
+    <div class="about_us" id="link-1">
+         <h2 class="about_title fadein">
           <img src="images/logo.png" alt="logo" class="about_title_logo">
           とは？
         </h2>
 
-      <div class="section_sentence">
+      <div class="section_sentence fadein">
         <p class="section_paragraph">
           ワークショップ・交流会・ライトニングトーク…<br>
           コミュニケーションの場で飛び交う<br>
@@ -76,11 +76,15 @@
       </div>
     </div>
 
-    <div class="cando-things" id="cando-link">
-      <h2 class="cando-title">できること</h2>
+    <div class="cando-things">
+      <h2 class="cando-title">
+        <span class="link2" id="link-2">
+        できること
+        </span>
+        </h2>
 
       <div class="cando-wrap">
-        <div class="cando-item interest">
+        <div class="cando-item interest fadein">
           <div class="text">
             <p class="subtitle">みんなの興味がわかる</p>
             <p class="paragraph">
@@ -93,7 +97,7 @@
           </div>
         </div>
 
-        <div class="cando-item sympathy">
+        <div class="cando-item sympathy fadein">
           <div class="text">
             <p class="subtitle">共感しあえる仲間ができる</p>
             <p class="paragraph">
@@ -106,7 +110,7 @@
           </div>
         </div>
 
-        <div class="cando-item action">
+        <div class="cando-item action fadein">
           <div class="text">
             <p class="subtitle">次のアクションにつながる</p>
             <p class="paragraph">
@@ -120,13 +124,20 @@
       </div>
     </div>
 
-    <div class= "case-study" id="case-study-link">
-      <h2 class="case-title">活用事例</h2> 
+    <div class= "case-study">
+      <h2 class="case-title">
+      <span class="link3" id="link-3">
+        活用事例
+      </span>
+      </h2>
+
       <!-- 追加でMP4の動画埋め込み(自動再生)playerはopacity:0でクリック発火 -->
+      <!--
       <div class="player">
         動画入ります。
       </div>
-       <div class="slider">
+      -->
+       <div class="slider fadein">
         <section>
           <div class="slide-item">
             <div class="flex">
@@ -193,11 +204,11 @@
           </div>
         </section>
       </div>
-    </div> 
+    </div>
 
     <footer class="footer" id="footer-link">
-      <h2 class="h2">SAN-ZEN</h2>
-      <p class="footer-sentence">
+      <h2 class="h2 fadein">SAN-ZEN</h2>
+      <p class="footer-sentence fadein">
         どんな人もやりたいことを実現できるような、<br>
         一人一人が燦然と輝く社会を作りだします。
       </p>

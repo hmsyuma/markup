@@ -21,7 +21,7 @@
 
 .case-study .slider{
   width: 834px;
-  margin: 187px auto 163px;
+  margin: 100px auto 163px; /**動画部分追加の際は　187px auto 163px　**/
 }
 
 .case-study .slider .slide-item .flex{

@@ -56,15 +56,24 @@
 }
 
 .cando-things .cando-item.interest .text::after{
-  background-image: url("../../images/cando-item-icon-interest.png");
+  background-image: url("../../images/cando-item-icon-interest.svg");
+}
+.cando-things .cando-item.interest .text:hover:after{
+  background-image: url("../../images/cando-item-icon-interest2.svg");
 }
 
 .cando-things .cando-item.sympathy .text::after{
-  background-image: url("../../images/cando-item-icon-sympathy.png");
+  background-image: url("../../images/cando-item-icon-sympathy.svg");
+}
+.cando-things .cando-item.sympathy .text:hover:after{
+  background-image: url("../../images/cando-item-icon-sympathy2.svg");
 }
 
 .cando-things .cando-item.action .text::after{
-  background-image: url("../../images/cando-item-icon-action.png");
+  background-image: url("../../images/cando-item-icon-action.svg");
+}
+.cando-things .cando-item.action .text:hover:after{
+  background-image: url("../../images/cando-item-icon-action2.svg");
 }
 
 /* PC */
