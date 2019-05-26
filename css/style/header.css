@@ -127,18 +127,21 @@
 
   .header .nav-wrap,
   .header .nav-wrap .nav{
-    opacity: 0;
+    display: none;
+    /* opacity: 0;
     transition: .4s;
-    transition-property: opacity;
+    transition-property: opacity; */
+    z-index: 8;
   }
 
   .header .nav{
-    display: block;
+    display: none;
     font-size: 24px;
     font-weight: bold;
     line-height: 2.5;
     text-align: right;
     padding: 30px;
+    z-index: 8;
   }
 
   .header .hamburger-button{
@@ -154,10 +157,11 @@
   }
 
   /* close */
-  .header .nav-wrap.is-open{
-    z-index: 3;
-  }
-  .header .nav-wrap.is-open,
+  /* .header .nav-wrap.is-open{
+    z-index: 10;
+  } */
+
+  /* .header .nav-wrap.is-open,
   .header .nav-wrap.is-open .nav{
     opacity: 1;
     transition: .4s;
@@ -170,5 +174,5 @@
 
   .is-open + .hamburger-button .open-button{
     display: none;
-  }
+  } */
 }
