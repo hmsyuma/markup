@@ -12,11 +12,12 @@
     <script src="js/slick.min.js"></script>
     <script src="js/fade.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/movie.js"></script>
     <title>Buddyup</title>
 </head>
 
- <body>
-  <div class="body-wrap">
+ <body id="Z">
+  <div id="test" class="body">
     <!--　navigation　-->
     <header class="header" role="banner">
       <div class="header-wrap">
@@ -132,11 +133,11 @@
       </h2>
 
       <!-- 追加でMP4の動画埋め込み(自動再生)playerはopacity:0でクリック発火 -->
-      <!--
+      
       <div class="player">
         動画入ります。
       </div>
-      -->
+     
        <div class="slider fadein">
         <section>
           <div class="slide-item">
@@ -219,5 +220,29 @@
       </ul>
       <div class="copyrights">Copyright 2019 SAN-ZEN. ALL Rights Reserved.</div>
     </footer>
+  </div>
+
+  <div id="A" class="non-m">
+    <div class="wrap-a">
+      <div class="movie-header">
+        <div class="movie-logo">
+          <img src="images/nav-logo.png" alt="buddyup">
+        </div>
+        <div class="close">
+          <a href="file:///Users/shimohozuma/rukaruka/index.html">
+            <img src="images/hamburger-close.svg" alt="menu close button" class="close-button">
+          </a>
+        </div>
+      </div>
+
+      <div class="movie-wrap">
+        <div class="inner">
+          <div class="youtube-movie-content">
+            <div id="text" class="inner-movie"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
