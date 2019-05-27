@@ -76,18 +76,18 @@
 }
 
 .about_us{
-    margin-top:-80px !important;
-    padding-top:80px !important;
-  }
+  margin-top:-80px !important;
+  padding-top:80px !important;
+}
 
 .link2{
-    margin-top:-250px !important;
-    padding-top:250px !important;
-  }
+  margin-top:-250px !important;
+  padding-top:250px !important;
+}
 
 .link3{
-    margin-top:-300px !important;
-    padding-top:300px !important;
+  margin-top:-300px !important;
+  padding-top:300px !important;
 }
 
 /* PC */
@@ -141,7 +141,7 @@
     line-height: 2.5;
     text-align: right;
     padding: 30px;
-    z-index: 8;
+    z-index: 20;
   }
 
   .header .hamburger-button{
