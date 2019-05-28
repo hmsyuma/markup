@@ -75,7 +75,6 @@
 }
 
 .about_us{
-<<<<<<< HEAD
   margin-top:-80px !important;
   padding-top:80px !important;
 }
@@ -88,20 +87,6 @@
 .link3{
   margin-top:-300px !important;
   padding-top:300px !important;
-=======
-    margin-top:-80px !important;
-    padding-top:80px !important;
-  }
-
-.link2{
-    margin-top:-250px !important;
-    padding-top:250px !important;
-  }
-
-.link3{
-    margin-top:-300px !important;
-    padding-top:300px !important;
->>>>>>> 73d7c8831619aa43bbd3cb77d9ffb84338008ecd
 }
 
 /* PC */
@@ -116,11 +101,7 @@
   .header .nav-wrap li+li{
     border-left: 1px solid #444;
   }
-<<<<<<< HEAD
  }
-=======
-}
->>>>>>> 73d7c8831619aa43bbd3cb77d9ffb84338008ecd
 
 /* SP */
 @media screen and (max-width:1080px){
