@@ -28,7 +28,7 @@ $(function (){
   $('.player').click(function(){
   $('#body-hide').removeClass().addClass("body-wrap");
   $('#open-movie').removeClass().addClass("movie");
-  $('#body-scroll-stoped').addClass("body-scroll-fixed");
+  $('#body-scroll').addClass("body-scroll-fixed");
   $('.inner-movie').attr('id', 'start-movie');
   // //ios スクロール固定
   $(window).on('touchmove.noScroll', function(e) {
