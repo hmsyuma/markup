@@ -36,7 +36,6 @@ $(function hamburgerMenu() {
 
   $('.nav-wrap').click(function(){
     var w = document.documentElement.scrollWidth;
-      console.log(w);
       if(w < 1080){
       $('.nav-wrap').fadeOut();
       $('.open-button').fadeIn();
