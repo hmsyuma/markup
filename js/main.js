@@ -64,6 +64,7 @@ $(function stickyHeader() {
 
 
 $(function allowBtn() {
+<<<<<<< HEAD
   $('.allow-btn').each(function () {
     var $el = $(scrollableElement('html', 'body'));
     $(this).on('click', function (event) {
@@ -98,3 +99,38 @@ $(function allowBtn() {
       return [];
   }
 });
+=======
+    $('.allow-btn').each(function () {
+        var $el = $(scrollableElement('html', 'body'));
+        $(this).on('click', function (event) {
+            event.preventDefault();
+            var w = document.documentElement.scrollWidth;
+            if(1080 <= w){
+               $el.animate({ scrollTop: 550 }, 500);
+            } else if(695 < w ) {
+              $el.animate({ scrollTop: 400 }, 500);  
+            } else {
+              $el.animate({ scrollTop: 400 }, 500);
+            }
+        });
+    });
+   function scrollableElement (elements) {
+        var i, len, el, $el, scrollable;
+        for (i = 0, len = arguments.length; i < len; i++) {
+            el = arguments[i],
+            $el = $(el);
+            if ($el.scrollTop() > 0) {
+                return el;
+            } else {
+                $el.scrollTop(1);
+                scrollable = $el.scrollTop() > 0;
+                $el.scrollTop(0);
+                if (scrollable) {
+                    return el;
+                }
+            }
+        }
+        return [];
+    }
+})
+>>>>>>> 73d7c8831619aa43bbd3cb77d9ffb84338008ecd
