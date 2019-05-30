@@ -11,7 +11,7 @@ ytPlayer = new YT.Player(
     height: 529,
     videoId: 'zTEYUFgLveY',
 
-    playerVars:{
+    playerVars: {
       rel: 0,
       autoplay: 1,
       modestbranding: 1,
@@ -23,8 +23,8 @@ ytPlayer = new YT.Player(
   );
 }
 
-$(function (){
-  $('.player').click(function(){
+$(function() {
+  $('.player').click(function() {
   $('#body-hide').removeClass().addClass("body-wrap");
   $('#open-movie').removeClass().addClass("movie");
   $('#body-scroll').addClass("body-scroll-fixed");

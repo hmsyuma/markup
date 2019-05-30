@@ -127,9 +127,6 @@
   .header .nav-wrap,
   .header .nav-wrap .nav{
     display: none;
-    /* opacity: 0;
-    transition: .4s;
-    transition-property: opacity; */
     z-index: 8;
   }
 
@@ -154,24 +151,4 @@
   .header .hamburger-button .close-button{
     display: none;
   }
-
-  /* close */
-  /* .header .nav-wrap.is-open{
-    z-index: 10;
-  } */
-
-  /* .header .nav-wrap.is-open,
-  .header .nav-wrap.is-open .nav{
-    opacity: 1;
-    transition: .4s;
-    transition-property: opacity;
-  }
-
-  .is-open + .hamburger-button .close-button{
-    display: block;
-  }
-
-  .is-open + .hamburger-button .open-button{
-    display: none;
-  } */
 }
