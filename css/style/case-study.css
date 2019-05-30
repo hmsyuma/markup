@@ -12,19 +12,17 @@
 }
 
 .case-study .player{
-  /* position: absolute; */
   width: 50%;
   height: 316px;
   margin: 101px auto 187px;
   background-color: #F8E43E;
   text-align: center;
   font-size: 4.0rem;
-  /* z-index: 500; */
 }
 
 .case-study .slider{
   width: 834px;
-  margin: 100px auto 163px; /**動画部分追加の際は　187px auto 163px　**/
+  margin: 187px auto 163px
 }
 
 .case-study .slider .slide-item .flex{
