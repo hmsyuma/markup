@@ -42,11 +42,11 @@
   align-items: center;
   width: 80%;
   margin: 0 auto 100px ;
-  padding-top: 60px ;
+  padding-top: 30px ;
 }
 
 .movie .movie-header .close{
-  width: 30px;
+  width: 15px;
 }
 
 .movie .movie-header .movie-logo{
