@@ -9,29 +9,38 @@ $(function() {
 
 $(function hamburgerMenu() {
   $('.open-button').click(function() {
+  $('.open-button').hide(1);
   $('.nav-wrap').fadeIn();
-  $('.open-button').fadeOut(1);
-  $('.close-button').fadeIn();
   $('.nav').fadeIn();
+  $('.close-button').show();
   });
 
   $('.close-button').click(function() {
+    $('.close-button').hide(1);
     $('.nav-wrap').fadeOut();
-    $('.open-button').fadeIn();
-    $('.close-button').fadeOut(1);
     $('.nav').fadeOut();
+    $('.open-button').show();
   });
 
   $('.nav-wrap').click(function() {
     var width = document.documentElement.scrollWidth;
-      if(width < 1080) {
+    if(width < 1080) {
+      $('.close-button').hide(1)
       $('.nav-wrap').fadeOut();
-      $('.open-button').fadeIn();
-      $('.close-button').fadeOut(1);
       $('.nav').fadeOut();
+      $('.open-button').show();
       }
   });
+
+  $(window).resize(function(){
+    var windowWdth = $(window).width();
+    if(windowWdth > 1080)
+    $('.nav-wrap').show();
+    $('.nav').show();
+  });
 });
+
+
 
 $(function stickyHeader() {
   $('.header').each(function () {
