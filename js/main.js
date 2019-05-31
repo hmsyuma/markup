@@ -40,8 +40,6 @@ $(function hamburgerMenu() {
   });
 });
 
-
-
 $(function stickyHeader() {
   $('.header').each(function () {
     var $window = $(window), 
@@ -57,7 +55,6 @@ $(function stickyHeader() {
       });
   });
 });
-
 
 $(function allowBtn() {
   $('.allow-btn').each(function () {
