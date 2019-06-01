@@ -1,9 +1,9 @@
 @charset "utf-8";
-html{
+html {
   font-size: 62.5%;
 }
 
-body{
+body {
   color: #333;
   font-family: "YuGothic Medium","Yu Gothic Medium","游ゴシック Medium","游ゴシック体 Medium",YuGothic,"Yu Gothic","游ゴシック","游ゴシック体","ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -13,12 +13,12 @@ body{
   -moz-osx-font-smoothing: grayscale;
 }
 
-img{
+img {
   max-width: 100%;
   height: auto;
 }
 
-.body{
+.body {
 animation: fadeIn 2s ease 0s 1 normal;
 -webkit-animation: fadeIn 2s ease 0s 1 normal;
 }
@@ -35,8 +35,8 @@ animation: fadeIn 2s ease 0s 1 normal;
 
 
 /*hamburger用*/
-@media screen and (max-width:1080px){
-  .is-overlay{
+@media screen and (max-width:1080px) {
+  .is-overlay {
     overflow: hidden;
     width: 100%;
     height: 100%;

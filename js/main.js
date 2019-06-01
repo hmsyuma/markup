@@ -32,7 +32,7 @@ $(function hamburgerMenu() {
       }
   });
 
-  $(window).resize(function(){
+  $(window).resize(function() {
     var windowWdth = $(window).width();
     if(windowWdth > 1080)
     $('.nav-wrap').show();

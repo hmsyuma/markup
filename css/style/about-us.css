@@ -1,18 +1,20 @@
-.about_us{
+.about_us {
   background-color: #EFEFEF;
   text-align: center;
   width: 100%;
   padding-bottom: 63px;
+  margin-top:-80px !important;
+  padding-top:80px !important;
 }
 
-.about_us .about_title{
+.about_us .about_title {
   position: relative;
   margin-bottom: 120px;
   padding-top: 158px;
   font-size: 3.2rem;
 }
 
-.about_us .about_title::after{
+.about_us .about_title::after {
   position: absolute;
   content: "";
   display: block;
@@ -25,35 +27,34 @@
   right: calc(50% - 350px);
 }
 
-.about_us .about_title .about_title_logo{
+.about_us .about_title .about_title_logo {
   width: 262px;
   margin: 0 25px -10px 0;
 }
 
-.about_us .section_sentence{
+.about_us .section_sentence {
   text-align: center;
   font-size: 2rem;
   color: #444;
 }
 
-.about_us .section_sentence .section_paragraph{
+.about_us .section_sentence .section_paragraph {
   font-size: 2rem;
   line-height: 200%;
 }
 
-.about_us .section_sentence .section_paragraph + .section_paragraph{
+.about_us .section_sentence .section_paragraph + .section_paragraph {
   padding-top: 2em;
 }
 
-
 /* SP */
-@media screen and (max-width:1080px){
+@media screen and (max-width:1080px) {
   .about_us .about_title{
     padding-top: 310px;
     margin-bottom: 45px;
   }
 
-  .about_us .about_title::after{
+  .about_us .about_title::after {
     right: 50%;
     width: 221px;
     height: 177px;
@@ -62,18 +63,18 @@
   }
 }
 
-@media screen and (max-width:600px){
-    .about_us .about_title .about_title_logo{
+@media screen and (max-width:600px) {
+    .about_us .about_title .about_title_logo {
     width: 50%;
     margin: 0 0 -5px 0;
   }
 
-  .about_us .section_sentence .section_paragraph{
+  .about_us .section_sentence .section_paragraph {
     padding: 0 16px;
     text-align: left;
   }
 
-  .about_us .section_sentence .section_paragraph br{
+  .about_us .section_sentence .section_paragraph br {
     display: none;
   }
 }
