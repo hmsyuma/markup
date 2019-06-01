@@ -11,7 +11,7 @@
   margin-bottom: 100px;
 }
 
-.case-study .player {
+.case-study .youtube-player {
   width: 50%;
   height: 316px;
   margin: 101px auto 187px;
@@ -87,7 +87,7 @@
 
 /* SP */
 @media screen and (max-width:1080px) {
-  .player {
+  .youtube-player {
     width: 100%;
     height: auto;
   }

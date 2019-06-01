@@ -1,3 +1,6 @@
+/**
+ * スライダーの読み込み
+ */
 $(function() {
   $('.slider').slick( {
     infinite: true,
@@ -7,12 +10,16 @@ $(function() {
   });
 });
 
-$(function hamburgerMenu() {
+/**
+ * SPハンバーガメニューの表示、非表示の
+ * クリックイベントを定義
+ */
+$(function() {
   $('.open-button').click(function() {
-  $('.open-button').hide(1);
-  $('.nav-wrap').fadeIn();
-  $('.nav').fadeIn();
-  $('.close-button').show();
+    $('.open-button').hide(1);
+    $('.nav-wrap').fadeIn();
+    $('.nav').fadeIn();
+    $('.close-button').show();
   });
 
   $('.close-button').click(function() {
@@ -29,17 +36,25 @@ $(function hamburgerMenu() {
       $('.nav-wrap').fadeOut();
       $('.nav').fadeOut();
       $('.open-button').show();
-      }
+    }
   });
 
   $(window).resize(function() {
     var windowWdth = $(window).width();
-    if(windowWdth > 1080)
-    $('.nav-wrap').show();
-    $('.nav').show();
+    if(1080 < windowWdth) {
+      $('.nav-wrap').show();
+      $('.nav').show();
+    } else {
+      $('.nav-wrap').hide();
+      $('.nav').hide();
+    }
   });
 });
 
+/**
+ * ステッキーヘッダーの定義
+ * スクロール位置を監視しながら、追従する。
+ */
 $(function stickyHeader() {
   $('.header').each(function () {
     var $window = $(window), 
@@ -48,27 +63,43 @@ $(function stickyHeader() {
 
     $window.on('scroll', function () {
       if($window.scrollTop() > headerOffsetTop) {
-         $header.addClass('sticky');
-         } else {
-         $header.removeClass('sticky');
-         }
-      });
+        $header.addClass('sticky');
+      } else {
+        $header.removeClass('sticky');
+      }
+    });
   });
 });
 
+/**
+ * main-visualのアローボタンの定義
+ * PCのリサイズ幅に合わせ、スクロール幅を変更
+ */
 $(function allowBtn() {
   $('.allow-btn').each(function () {
-    var $el = $(scrollableElement('html', 'body'));
+    var $scrollableElement = $(scrollableElement('html', 'body'));
     $(this).on('click', function (event) {
-          event.preventDefault();
-          var w = document.documentElement.scrollWidth;
-          if(1080 <= w) {
-             $el.animate({ scrollTop: 550 }, 500);
-          } else if(695 < w ) {
-            $el.animate({ scrollTop: 400 }, 500);  
-          } else {
-            $el.animate({ scrollTop: 400 }, 500);
-          }
+      pcWidth = 1080;
+      maxSpWidth = 695;
+      minSpWidth = 500;
+      pcHeightScroll = 500;
+      maxSpHeigthScroll = 380;
+      middleSpHeigthScroll = 430;
+      minSpHeigthScroll = 300;
+      scrollSpeed = 500;
+
+      event.preventDefault();
+      var scrollWidth = document.documentElement.scrollWidth;
+      if(pcWidth <= scrollWidth) {
+        $scrollableElement.animate({ scrollTop: pcHeightScroll }, scrollSpeed);
+      } else if(maxSpWidth < scrollWidth ) {
+        $scrollableElement.animate({ scrollTop: maxSpHeigthScroll }, scrollSpeed);
+      } else {
+        if(minSpWidth < scrollWidth) {
+        $scrollableElement.animate({ scrollTop: middleSpHeigthScroll }, scrollSpeed);
+      } else {
+        $scrollableElement.animate({ scrollTop: minSpHeigthScroll }, scrollSpeed);
+        }}
       });
   });
 
@@ -79,15 +110,15 @@ $(function allowBtn() {
         $el = $(el);
         if($el.scrollTop() > 0) {
           return el;
-          } else {
+        } else {
           $el.scrollTop(1);
           scrollable = $el.scrollTop() > 0;
           $el.scrollTop(0);
-            if (scrollable) {
-              return el;
-              }
-            }
+          if (scrollable) {
+            return el;
           }
-      return [];
+        }
+      }
+    return [];
   }
 });
