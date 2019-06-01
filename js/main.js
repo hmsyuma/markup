@@ -60,6 +60,7 @@ $(function() {
   });
 });
 
+
 $(function stickyHeader() {
   $('.header').each(function () {
     var $window = $(window), 
