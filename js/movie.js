@@ -1,21 +1,22 @@
-var tag = document.createElement('script');
-tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 function onYouTubeIframeAPIReady() {
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
   ytPlayer = new YT.Player(
+
     'start-movie',
       {
-      width: 940,
-      height: 529,
-      videoId: 'Baza8JnhZLU',
+      width: 940,  //動画の幅指定
+      height: 529,  //動画の高さ指定
+      videoId: 'Baza8JnhZLU', //youtubeID
       playerVars: {
-        rel: 0,  //プレーヤー関連動画非表示
-        autoplay: 1,  //自動再生
-        modestbranding: 1,  //ロゴ費用時
-        iv_load_policy: 3,  //アノテーション非表示
-        showinfo: 0, //動画のタイトル表示
+        rel: 0,  //プレーヤー関連動画非表示にする
+        autoplay: 1,  //自動再生を行う
+        modestbranding: 1,  //ロゴを非表示にする
+        iv_load_policy: 3,  //アノテーション非表示する
+        showinfo: 0, //動画のタイトル非表示にする
       }
     }
   );
@@ -33,6 +34,7 @@ $(function() {
     $('#body-hide').removeClass().addClass("body-wrap");
     $('#open-movie').removeClass().addClass("movie");
     $('#body-scroll').addClass("body-scroll-fixed");
+    $('.inner-movie').removeAttr('id', 'stop-movie');
     $('.inner-movie').attr('id', 'start-movie');
     $(window).on('touchmove.noScroll', function(e) {
       e.preventDefault();
@@ -43,13 +45,18 @@ $(function() {
 
 /**
  * colseボタンをクリックした際に、発火
- * 動画領域が消え、headerからfooterが再表示
+ * ytPlayer.destroy();により、動画の読み込みを削除
+ * 動画領域がmovie-hide,bodyへのクラス名変更によろ、
+ * 動画領域が消え、headerからfooterまでが再表示
  */
-  $(function() {
+$(function() {
   $('#js-close-movie').click(function() {
+    ytPlayer.destroy();
     $('#body-hide').removeClass().addClass("body");
     $('#open-movie').removeClass().addClass("movie-hide");
     $('#body-scroll').removeClass();
     $('.inner-movie').removeAttr('id', 'start-movie');
+    $('.inner-movie').attr('id', 'stop-movie');
   });
 });
+
