@@ -3,13 +3,14 @@
  * @returns　YOUTUBEAPIの読み込みにより、
  *    start-movieクラスに動画を読み込み再生する。
  */
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
 function onYouTubeIframeAPIReady() {
-  var tag = document.createElement('script');
-  tag.src = "https://www.youtube.com/iframe_api";
-  var firstScriptTag = document.getElementsByTagName('script')[0];
-  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
   ytPlayer = new YT.Player(
-    'start-movie',
+      'start-movie',
       {
       width: 940,  //動画の幅指定
       height: 529,  //動画の高さ指定

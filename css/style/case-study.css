@@ -1,7 +1,14 @@
 .case-study {
   text-align: center;
-  background: linear-gradient(#f2f2f2, #fff);
+  width:100%;
   position: relative;
+}
+
+.case-study .case-bg {
+  position: absolute;
+  top: 0;
+  left:0;
+  z-index: -10;
 }
 
 .case-title {
