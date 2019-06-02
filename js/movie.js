@@ -1,11 +1,14 @@
-
+/**
+ * @name onYouTubeIframeAPIReady
+ * @returns　YOUTUBEAPIの読み込みにより、
+ *    start-movieクラスに動画を読み込み再生する。
+ */
 function onYouTubeIframeAPIReady() {
   var tag = document.createElement('script');
   tag.src = "https://www.youtube.com/iframe_api";
   var firstScriptTag = document.getElementsByTagName('script')[0];
   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
   ytPlayer = new YT.Player(
-
     'start-movie',
       {
       width: 940,  //動画の幅指定
@@ -23,11 +26,10 @@ function onYouTubeIframeAPIReady() {
 }
 
 /**
- * topページの画像を押した際に発火
- * headerからfooterが非表示になり、
- * 動画領域が表示される。
+ * topページの画像を押した際に発生
+ * @returns headerからfooterが非表示になり、動画領域が表示される。
  * nYouTubeIframeAPIReady関数を実行
- * 動画が読み込まれ、自動再生
+ * @returns 動画が読み込まれ、自動再生
  */
 $(function() {
   $('#js-youtube-player').click(function() {
@@ -44,10 +46,10 @@ $(function() {
   });
 
 /**
- * colseボタンをクリックした際に、発火
- * ytPlayer.destroy();により、動画の読み込みを削除
- * 動画領域がmovie-hide,bodyへのクラス名変更によろ、
- * 動画領域が消え、headerからfooterまでが再表示
+ * colseボタンをクリックした際に、発生
+ * @returns ytPlayer.destroy();により、動画の読み込みを削除
+ * @returns 動画領域がmovie-hide,bodyへのクラス名変更ににより、
+ *    動画領域が消え、headerからfooterまでが再表示
  */
 $(function() {
   $('#js-close-movie').click(function() {
@@ -59,4 +61,3 @@ $(function() {
     $('.inner-movie').attr('id', 'stop-movie');
   });
 });
-

@@ -1,6 +1,6 @@
 /**
- * .sliderでプラグインから
- * slickの読み込みを行う。
+ * @returns sliderクラスに対して、
+ *    slickの読み込みを行う。
  */
 $(function() {
     $('.slider').slick( {

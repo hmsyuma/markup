@@ -174,8 +174,8 @@
   .cando-things .cando-item {
     background-color: #FAEA6B;
     padding: 340px 20px 20px;
-
   }
+
   .cando-things .cando-item + .cando-item {
     margin-top: 40px;
   }
@@ -184,12 +184,15 @@
     font-size: 2.8rem;
     text-align: center;
   }
+
   .cando-things .cando-item .paragraph {
     font-size: 2rem;
   }
+
   .cando-things .cando-item .paragraph br {
     display: none;
   }
+
   .cando-things .cando-item .text::after {
     width: 280px;
     height: 240px;

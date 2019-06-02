@@ -1,3 +1,10 @@
+/**
+ * @name stickyHeader
+ * .headerに.eachにより繰り返し処理を行う
+ * @returns windowのスクロール量の監視を行い
+ *    ヘッダーのデフォルト位置を超えていれば、stickyクラス付与
+ *    そうでなければ、クラスを削除する。
+ */
 $(function stickyHeader() {
   $('.header').each(function () {
     var $window = $(window), 
@@ -14,6 +21,12 @@ $(function stickyHeader() {
   });
 });
 
+/**
+ * @name allowBtn
+ * .allow-btnに.eachにより繰り返し処理を行う
+ * @returns windowのwidthの監視を行いサイズによって、
+ *    スクロール量を調整する。
+ */
 $(function allowBtn() {
   $('.allow-btn').each(function () {
     var $scrollableElement = $(scrollableElement('html', 'body'));
@@ -35,14 +48,15 @@ $(function allowBtn() {
         $scrollableElement.animate({ scrollTop: maxSpHeigthScroll }, scrollSpeed);
       } else {
         if(minSpWidth < scrollWidth) {
-        $scrollableElement.animate({ scrollTop: middleSpHeigthScroll }, scrollSpeed);
-      } else {
-        $scrollableElement.animate({ scrollTop: minSpHeigthScroll }, scrollSpeed);
+          $scrollableElement.animate({ scrollTop: middleSpHeigthScroll }, scrollSpeed);
+        } else {
+          $scrollableElement.animate({ scrollTop: minSpHeigthScroll }, scrollSpeed);
         }}
       });
   });
-
-  function scrollableElement (elements) {
+　
+  //スクロール可能な要素を取得
+  function scrollableElement () {
     var i, len, el, $el, scrollable;
       for (i = 0, len = arguments.length; i < len; i++) {
         el = arguments[i],

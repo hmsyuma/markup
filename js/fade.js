@@ -1,3 +1,10 @@
+/**
+ * windowのスクロールにより発生
+ * @returns　.fadeinに.eachにより繰り返し処理を行う
+ * @returns windowのスクロール量の監視を行い
+ *    スクロール位置が、指定位置を超えていれば、
+ *    指定したオブジェクトにopacity、transformが追加され、表示される
+ */
 $(function() {
   $(window).scroll(function() {
     $('.fadein').each(function() {
