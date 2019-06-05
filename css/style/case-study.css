@@ -6,13 +6,15 @@
 
 .case-study .case-bg {
   position: absolute;
-  top: 0;
-  left:0;
+  top: 0px;
+  left: 0;
+  padding-top: 7%;
+  height: auto;
   z-index: -10;
 }
 
 .case-title {
-  padding-top: 15%;
+  padding-top: 25%;
   font-size: 3.2rem;
   font-weight: bold;
   margin-bottom: 100px;
