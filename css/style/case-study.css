@@ -1,17 +1,27 @@
-.case-study{
+.case-study {
   text-align: center;
-  background: linear-gradient(#f2f2f2, #fff);
+  width:100%;
+  position: relative;
 }
 
-.case-title{
-  padding-top: 15%;
+.case-study .case-bg {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  padding-top: 7%;
+  height: auto;
+  z-index: -10;
+}
+
+.case-title {
+  padding-top: 25%;
   font-size: 3.2rem;
   font-weight: bold;
   margin-bottom: 100px;
 }
 
-.player{
-  width: 592px;
+.case-study .youtube-player {
+  width: 50%;
   height: 316px;
   margin: 101px auto 187px;
   background-color: #F8E43E;
@@ -19,27 +29,27 @@
   font-size: 4.0rem;
 }
 
-.case-study .slider{
+.case-study .slider {
   width: 834px;
   margin: 187px auto 163px;
 }
 
-.case-study .slider .slide-item .flex{
+.case-study .slider .slide-item .flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.case-study .slider .slide-item .flex .sl-img{
+.case-study .slider .slide-item .flex .sl-img {
   padding-top: 120px;
   width: 337px;
 }
 
-.case-study .slider .slide-item .flex .textarea{
+.case-study .slider .slide-item .flex .textarea {
   margin: 0 auto;
 }
 
-.case-study .slider .slide-item .flex .textarea .topic{
+.case-study .slider .slide-item .flex .textarea .topic {
   font-weight: bold;
   font-size: 3.3rem;
   text-align: left;
@@ -47,14 +57,14 @@
   line-height: 150%;
 }
 
-.case-study .slider .slide-item .flex .textarea .slide-name{
+.case-study .slider .slide-item .flex .textarea .slide-name {
   font-size: 1.4rem;
   text-align: right;
   font-weight: bold;
   margin-bottom: 30px;
 }
 
-.case-study .slider .slide-item .flex .textarea .slide-text{
+.case-study .slider .slide-item .flex .textarea .slide-text {
   font-size: 1.6rem;
   text-align: left;
   font-weight: bold;
@@ -64,89 +74,89 @@
   padding-bottom: 30px;
 }
 
-.case-study .slide-arrow{
+.case-study .slide-arrow {
   display: flex;
 }
 
 .case-study .slide-prearrow,
-.case-study .slide-nextarrow{
+.case-study .slide-nextarrow {
   position: absolute;
   top: 200px;
   width: 21px;
   height: 56px;
 }
 
-.case-study .slide-prearrow{
+.case-study .slide-prearrow {
   right: -68px;
 }
 
-.case-study .slide-nextarrow{
+.case-study .slide-nextarrow {
   left: -18px;
 }
 
 /* SP */
-@media screen and (max-width:1080px){
-  .player{
+@media screen and (max-width:1080px) {
+  .youtube-player {
     width: 100%;
     height: auto;
   }
 
-  .case-study .slider{
+  .case-study .slider {
     width: 100%;
     margin: 0 0 70px;
     padding: 0 40px;
   }
 
-  .case-study .slider .slick-track{
+  .case-study .slider .slick-track {
     width: auto !important;
     transform: translate3d(0, 0, 0) !important;
   }
 
   .case-study .slider .slick-slide:first-child,
-  .case-study .slider .slick-slide:nth-child(n+5){
+  .case-study .slider .slick-slide:nth-child(n+5) {
     display: none !important;
   }
 
-  .case-study .slider .slick-list{
+  .case-study .slider .slick-list {
     height: auto !important;
   }
 
-  .case-study .slider .slick-arrow{
+  .case-study .slider .slick-arrow {
     display: none !important;
   }
 
-  .case-study .slider .slide-item .flex{
+  .case-study .slider .slide-item .flex {
     flex-direction: column-reverse;
   }
 
-  .case-study .slider .slide-item .flex .sl-img{
+  .case-study .slider .slide-item .flex .sl-img {
     padding: 0;
     width: 100%;
   }
 
-  .case-study .slider .slide-item .flex .sl-img img{
+  .case-study .slider .slide-item .flex .sl-img img {
     margin: 0 auto;
   }
 
-  .case-study .slider .slide-item .flex .textarea{
+  .case-study .slider .slide-item .flex .textarea {
     margin-top: 45px;
     max-width: 600px;
   }
 
-  .case-study .slider .slide-item .flex .textarea .topic{
+  .case-study .slider .slide-item .flex .textarea .topic {
     font-size: 24px;
   }
 
-  .case-study .slider .slide-item .flex .textarea .slide-name{
+  .case-study .slider .slide-item .flex .textarea .slide-name {
     font-size: 20px;
   }
 
-  .case-study .slider .slide-item .flex .textarea .slide-text{
+  .case-study .slider .slide-item .flex .textarea .slide-text {
     border: none;
     font-size: 14px;
   }
 
-  .case-study .slider .slide-item .flex .textarea .slide-text br{
+  .case-study .slider .slide-item .flex .textarea .slide-text br {
     display: none;
   }
 }

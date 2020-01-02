@@ -1,4 +1,4 @@
-.footer{
+.footer {
   text-align: center;
   background-color: #868686;
   width: 100%;
@@ -6,7 +6,7 @@
   color: #FFF;
 }
 
-.footer::before{
+.footer::before {
   width: 100%;
   height: 16px;
   display: block;
@@ -16,33 +16,33 @@
   background-color:#FFF;
 }
 
-.footer .h2{
+.footer .h2 {
   font-size: 7.5rem;
   margin-bottom: 72px;
   padding-top: 137px;
 }
 
-.footer-ul{
+.footer-ul {
   margin-bottom: 23px;
 }
 
-.footer .footer-sentence{
+.footer .footer-sentence {
   font-size: 2.0rem;
   line-height: 2.0;
   margin-bottom: 3.7%;
 }
 
-.footer .footer-ul .li-item{
+.footer .footer-ul .li-item {
   display: inline-block;
   font-size: 2.0rem;
   padding: 0 1em;
 }
 
-.footer .footer-ul .li-item a{
+.footer .footer-ul .li-item a {
   color: #FFF;
 }
 
-.footer li + li{
+.footer li + li {
   border-left: 1px solid #FFF;
   font-size: 1.5rem;
 }
@@ -53,25 +53,25 @@
 }
 
 /* SP */
-@media screen and (max-width:600px){
-  .footer .h2{
+@media screen and (max-width:600px) {
+  .footer .h2 {
     font-size: 6.9rem;
     margin-bottom: 30px;
   }
 
-  .footer .footer-sentence{
+  .footer .footer-sentence {
     font-size: .9rem;
   }
 
-  .footer .footer-ul{
+  .footer .footer-ul {
     margin-bottom: 89px;
   }
 
-  .footer .footer-ul .li-item{
+  .footer .footer-ul .li-item {
     font-size: 1.1rem;
   }
 
-  .footer .copyrights{
+  .footer .copyrights {
     padding-bottom: 96px;
   }
 }

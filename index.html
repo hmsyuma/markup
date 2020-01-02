@@ -10,13 +10,16 @@
     <link rel="stylesheet" href="css/slick/slick-theme.css" media="screen">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/fade.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/movie.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/sp-nav.js"></script>
     <title>Buddyup</title>
-</head> 
 
- <body>
-  <div class="body-wrap">
-    <!--　navigation　-->
+</head>
+<body id="body-scroll">
+  <div id="body-hide" class="body">
     <header class="header" role="banner">
       <div class="header-wrap">
         <div class="logo">
@@ -26,11 +29,11 @@
         </div>
         <nav class="nav-wrap is-close">
           <ul class="nav">
-            <li><a href="#link-1">Buddyup!とは?</a></li>
-            <li><a href="#link-2">できること</a></li>
-            <li><a href="#link-3">活用事例</a></li>
-            <li><a href="#footer-link">SAN-ZEN</a></li>
-            <li><a href="#">オーナーの方はこちら</a></li>
+            <li><a href="#link-about">Buddyup!とは?</a></li>
+            <li><a href="#link-cando-thing">できること</a></li>
+            <li><a href="#link-case-study">活用事例</a></li>
+            <li><a href="#link-footer">SAN-ZEN</a></li>
+            <!--<li><a href="#">オーナーの方はこちら</a></li>-->
           </ul>
         </nav>
         <div class="hamburger-button">
@@ -39,51 +42,50 @@
         </div>
         <a class="service-link-button">Buddyupを使ってみる</a>
       </div>
-    </header> 
+    </header>
 
     <div class="main-visual">
       <div class="main-visual-title">
-        <div class="main-visual-logo">
+        <div class="main-visual-logo fadein">
           <img src="images/main-visual-logo.png" alt="buddyup">
         </div>
-        <div class="main-visual-sub-text">ー　未来を作る、仲間とつながる　ー</div>
+        <div class="main-visual-sub-text fadein">ー　未来を作る、仲間とつながる　ー</div>
       </div>
-      
+
       <button type="button" class="allow-btn">
         <img src="images/top-button.png" alt="button">
-       </button>
-
+      </button>
     </div>
 
-    <div class="about_us" id="link-1">
-         <h2 class="about_title">
-          <img src="images/logo.png" alt="logo" class="about_title_logo">
+    <div class="about-us" id="link-about">
+        <h2 class="about-title fadein">
+          <img src="images/logo.png" alt="logo" class="about-title-logo">
           とは？
         </h2>
 
-      <div class="section_sentence">
-        <p class="section_paragraph">
+      <div class="section-sentence fadein">
+        <p class="section-paragraph">
           ワークショップ・交流会・ライトニングトーク…<br>
           コミュニケーションの場で飛び交う<br>
           みんなの興味や関心を表すキーワードを得ることで<br>
           出会いを次のアクションにつなげることができるサービスです。
         </p>
-        <p class="section_paragraph">
+        <p class="section-paragraph">
           自分がやりたいことを実現するために必要な仲間と<br>
           つながるための第一歩を踏み出すきっかけを作ります。
         </p>
       </div>
     </div>
-  
+
     <div class="cando-things">
       <h2 class="cando-title">
-        <span class="link2" id="link-2">
+        <span class="cando-scroll-fixed" id="link-cando-thing">
         できること
         </span>
-        </h2>
-        
+      </h2>
+
       <div class="cando-wrap">
-        <div class="cando-item interest">
+        <div class="cando-item interest fadein">
           <div class="text">
             <p class="subtitle">みんなの興味がわかる</p>
             <p class="paragraph">
@@ -96,7 +98,7 @@
           </div>
         </div>
 
-        <div class="cando-item sympathy">
+        <div class="cando-item sympathy fadein">
           <div class="text">
             <p class="subtitle">共感しあえる仲間ができる</p>
             <p class="paragraph">
@@ -109,7 +111,7 @@
           </div>
         </div>
 
-        <div class="cando-item action">
+        <div class="cando-item action fadein">
           <div class="text">
             <p class="subtitle">次のアクションにつながる</p>
             <p class="paragraph">
@@ -123,18 +125,19 @@
       </div>
     </div>
 
-    <div class= "case-study">
+    <div class="case-study">
+      <img class="case-bg" src="images/case-bg.svg" alt="背景画像">
       <h2 class="case-title">
-      <span class="link3" id="link-3">
-        活用事例
-      </span>
-      </h2> 
-        
-      <!-- 追加でMP4の動画埋め込み(自動再生)playerはopacity:0でクリック発火 -->
-      <div class="player">
+        <span class="case-study-scroll-fixed" id="link-case-study">
+          活用事例
+        </span>
+      </h2>
+
+      <div id="js-youtube-player" class="youtube-player">
         動画入ります。
       </div>
-       <div class="slider">
+
+      <div class="slider fadein">
         <section>
           <div class="slide-item">
             <div class="flex">
@@ -201,20 +204,42 @@
           </div>
         </section>
       </div>
-    </div> 
+    </div>
 
-    <footer class="footer" id="footer-link">
-      <h2 class="h2">SAN-ZEN</h2>
-      <p class="footer-sentence">
+    <footer class="footer" id="link-footer">
+      <h2 class="h2 fadein">SAN-ZEN</h2>
+      <p class="footer-sentence fadein">
         どんな人もやりたいことを実現できるような、<br>
         一人一人が燦然と輝く社会を作りだします。
       </p>
       <ul class="footer-ul">
         <li class="li-item"><a href="#">ご利用規約</a></li>
         <li class="li-item"><a href="#">個人情報に関する方針</a></li>
-        <li class="li-item"><a href="#">お問い合わせ</a></li>
+        <li class="li-item"><a href="mailto:contact@buddyup3000.com">お問い合わせ</a></li>
       </ul>
       <div class="copyrights">Copyright 2019 SAN-ZEN. ALL Rights Reserved.</div>
     </footer>
+  </div>
+
+  <div id="open-movie" class="movie-hide">
+    <div class="wrap-a">
+      <div class="movie-header">
+        <div class="movie-logo">
+          <a href=""><img src="images/nav-logo.png" alt="buddyup"></a>
+        </div>
+        <div id="js-close-movie" class="close">
+            <div class="movie-close-btn"><span></span></div>
+        </div>
+      </div>
+
+      <div class="movie-wrap">
+        <div class="inner">
+          <div class="youtube-movie-content">
+            <div id="stop-movie" class="inner-movie"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
