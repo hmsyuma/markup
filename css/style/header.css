@@ -3,7 +3,6 @@
   background-color: #fff;
   width: 100%;
   height: 80px;
-  /* position: absolute; */
   z-index: 6;
 }
 
@@ -76,18 +75,18 @@
 }
 
 .about_us{
-    margin-top:-80px !important;
-    padding-top:80px !important;
-  }
+  margin-top:-80px !important;
+  padding-top:80px !important;
+}
 
 .link2{
-    margin-top:-250px !important;
-    padding-top:250px !important;
-  }
+  margin-top:-250px !important;
+  padding-top:250px !important;
+}
 
 .link3{
-    margin-top:-300px !important;
-    padding-top:300px !important;
+  margin-top:-300px !important;
+  padding-top:300px !important;
 }
 
 /* PC */
@@ -102,7 +101,7 @@
   .header .nav-wrap li+li{
     border-left: 1px solid #444;
   }
-}
+ }
 
 /* SP */
 @media screen and (max-width:1080px){
@@ -127,18 +126,18 @@
 
   .header .nav-wrap,
   .header .nav-wrap .nav{
-    opacity: 0;
-    transition: .4s;
-    transition-property: opacity;
+    display: none;
+    z-index: 8;
   }
 
   .header .nav{
-    display: block;
+    display: none;
     font-size: 24px;
     font-weight: bold;
     line-height: 2.5;
     text-align: right;
     padding: 30px;
+    z-index: 20;
   }
 
   .header .hamburger-button{
@@ -150,25 +149,6 @@
   }
 
   .header .hamburger-button .close-button{
-    display: none;
-  }
-
-  /* close */
-  .header .nav-wrap.is-open{
-    z-index: 3;
-  }
-  .header .nav-wrap.is-open,
-  .header .nav-wrap.is-open .nav{
-    opacity: 1;
-    transition: .4s;
-    transition-property: opacity;
-  }
-
-  .is-open + .hamburger-button .close-button{
-    display: block;
-  }
-
-  .is-open + .hamburger-button .open-button{
     display: none;
   }
 }

@@ -1,6 +1,7 @@
 .case-study{
   text-align: center;
   background: linear-gradient(#f2f2f2, #fff);
+  position: relative;
 }
 
 .case-title{
@@ -10,8 +11,8 @@
   margin-bottom: 100px;
 }
 
-.player{
-  width: 592px;
+.case-study .player{
+  width: 50%;
   height: 316px;
   margin: 101px auto 187px;
   background-color: #F8E43E;
@@ -21,7 +22,7 @@
 
 .case-study .slider{
   width: 834px;
-  margin: 187px auto 163px;
+  margin: 187px auto 163px
 }
 
 .case-study .slider .slide-item .flex{
